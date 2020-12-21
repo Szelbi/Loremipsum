@@ -1,0 +1,58 @@
+body {
+	font-family: Tahoma, "Courier New", Courier, monospace;
+	color: #777;
+	/*height: 2000px;*/
+}
+.main{
+	padding-top: 80px;
+	
+}
+.container {
+	border: 1px solid red;
+	/*padding: 60px 15px 0;*/
+}
+.row {
+	background: rgba(255,150,0,0.1);
+	border: 1px solid orange;
+}
+
+.footer{
+/*    width:100%;
+    position:fixed;
+    bottom:0px;*/
+    background: #331;
+    color: #ddb;
+/*    font-size: 200%;
+    height: 50px;
+    vertical-align: top; 
+    text-align: right;*/
+}
+.navbar{
+	margin-bottom: 50px;
+}
+.right{
+	float:right;
+}
+.hidd{
+	display:none;
+}
+.fotki {
+	max-height: 250px;
+	max-width: 250px;
+}
+table {
+	/*border-collapse: collapse;*/
+}
+
+div.ib {
+	display: inline-block;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 5px;
+	background: #Ccc;
+}
+table, th, td {
+	border: 1px solid black;
+	padding: 7px;
+	text-align: center;
+}
