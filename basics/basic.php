@@ -11,17 +11,22 @@
     <script src="/loremipsum/js/bootstrap.min.js"></script>
 
     <style>
-        .sidebar-center{
+        .sidebar-center {
             display: flex;
             justify-content: center;
         }
+
         .sidebar {
-            background: rgba(50,190,150,0.1);
+            background: rgba(50, 190, 150, 0.1);
             display: inline-block;
             position: fixed;
             border: 1px solid black;
             /*max-width: 300px;*/
             font-size: 14px;
+        }
+
+        .color-row {
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -43,7 +48,7 @@
                     <h1 id="1">Lorem Ipsum123</h1>
                     <div class="row" id="Tekst">
                         <button class="right btn btn-primary" onclick="hideDiv('tekst-content')">Chowanie</button>
-                        <h3 id="2">Tekst</h3>
+                        <h4 id="2">Tekst</h4>
                         <div id="tekst-content" class="hidd">
                             <p><img src="../img/300x200.jpg" max-height="120" align="right" style="margin: 10px"/>Lorem
                                 ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse <b>facilisis</b>, nisi et
@@ -68,7 +73,7 @@
                     </div>
                     <div class="row" id="Listy">
                         <button class="right btn btn-primary" onclick="hideDiv('listy-content')">Chowanie</button>
-                        <h3 id="3">Listy</h3>
+                        <h4 id="3">Listy</h4>
                         <div id="listy-content" class="hidd">
                             <ul>
                                 <li>Pozycja1</li>
@@ -85,7 +90,7 @@
                     </div>
                     <div class="row" id="Obrazy">
                         <button class="right btn btn-primary" onclick="hideDiv('obrazy-content')">Chowanie</button>
-                        <h3 id="5">Obrazy (ze stylu css)</h3>
+                        <h4 id="5">Obrazy (ze stylu css)</h4>
                         <div id="obrazy-content" class="hidd">
                             <img src="https://picsum.photos/1000/1000/?random" title="Obrazeczek" class="fotki"/>
                             <img src="https://picsum.photos/250/600/?random" class="fotki"/>
@@ -94,7 +99,7 @@
                     </div>
                     <div class="row" id="Tabele">
                         <button class="right btn btn-primary" onclick="hideDiv('tabele-content')">Chowanie</button>
-                        <h3>Tabele</h3>
+                        <h4>Tabele</h4>
                         <div id="tabele-content" class="hidd">
                             <table align="center" class="table" style="width:70%">
                                 <tr>
@@ -126,10 +131,10 @@
                     </div>
                     <div class="row" id="Formularze">
                         <button class="right btn btn-primary" onclick="hideDiv('formularze-content')">Chowanie</button>
-                        <h3 id="7">Formularze</h3>
+                        <h4 id="7">Formularze</h4>
                         <div id="formularze-content" class="hidd">
                             <div class="ib" id="login">
-                                <form action="basic.html" method="GET">
+                                <form action="basic.php" method="GET">
                                     <p>Login: <input type="text" name="Login"></p>
                                     <p>Hasło: <input type="password" name="Hasło"></p>
                                     <input type="submit"/>
@@ -194,20 +199,42 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="row" id="Dodatkowe">
-                        <div>
-                            <button class="right btn btn-primary" onclick="hideDiv('elementy-content')">Chowanie
-                            </button>
-                            <h3>Dodatkowe elementy HTML</h3>
-                            <div id="elementy-content" class="">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis impedit, dicta
-                                    commodi
-                                    sunt earum eos.
-                                    Debitis earum officia, perspiciatis error.</p>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.5096192533256!2d18.972279350837542!3d50.114185079329495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716b7e17fbf287f%3A0x93e77379968ea592!2sHierowskiego+29%2C+43-110+Tychy!5e0!3m2!1sen!2spl!4v1559672324057!5m2!1sen!2spl"
-                                        width="100%" height="400px"></iframe>
-                            </div>
+                        <button class="right btn btn-primary" onclick="hideDiv('elementy-content')">
+                            Chowanie
+                        </button>
+                        <h4>Dodatkowe elementy HTML</h4>
+                        <div id="elementy-content" class="hidd">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis impedit, dicta
+                                commodi
+                                sunt earum eos.
+                                Debitis earum officia, perspiciatis error.</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.5096192533256!2d18.972279350837542!3d50.114185079329495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716b7e17fbf287f%3A0x93e77379968ea592!2sHierowskiego+29%2C+43-110+Tychy!5e0!3m2!1sen!2spl!4v1559672324057!5m2!1sen!2spl"
+                                    width="100%" height="400px"></iframe>
+                        </div>
+                    </div>
+                    <div class="row" id="Youtube">
+                        <button class="right btn btn-primary" onclick="hideDiv('youtube-content')">
+                            Chowanie
+                        </button>
+                        <h4>Flash, wideo i audio</h4>
+                        <div id="youtube-content" class="hidd">
+                            <iframe width="760" height="400" src="https://www.youtube.com/embed/L5uV3gmOH9g">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="row" id="Kolor">
+                        <button class="right btn btn-primary" onclick="hideDiv('kolor-content')">
+                            Chowanie
+                        </button>
+                        <h4>Flash, wideo i audio</h4>
+                        <div id="kolor-content" class="hidd">
+							<?php
+							echo '
+                                <div class="color-row"></div>
+                                <div class="color-row"></div>
+                                <div class="color-row"></div>';
+							?>
                         </div>
                     </div>
                 </div>
@@ -224,9 +251,9 @@
                         <li><a href="#Tabele">Tabele</a></li>
                         <li><a href="#Formularze">Formularze</a></li>
                         <li><a href="#Dodatkowe">Dodatkowe elementy HTML</a></li>
-                        <li><a href="#9">Flash, wideo i audio</a></li>
-                        <li><a href="#10">Prezentacja CSS</a></li>
-                        <li><a href="#11">Kolor</a></li>
+                        <li><a href="#Youtube">Flash, wideo i audio</a></li>
+                        <li><a>Prezentacja CSS</a></li>
+                        <li><a href="#Kolor">Kolor</a></li>
                         <li><a href="#12">Tekst</a></li>
                         <li><a href="#13">Pudełka elementów</a></li>
                         <li><a href="#14">Listy, tabele i formularze</a></li>
