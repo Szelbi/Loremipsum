@@ -5,13 +5,13 @@ body {
 }
 .main{
 	padding-top: 80px;
-	
+	padding-bottom: 120px;
 }
 .container {
 	border: 1px solid red;
 	/*padding: 60px 15px 0;*/
 }
-.row {
+.border-orange {
 	background: rgba(255,150,0,0.1);
 	border: 1px solid orange;
 }
@@ -20,14 +20,18 @@ body {
     width:100%;
     position:fixed;
     bottom:0;
-    background: #331;
-    color: #ddb;
-    height: 30px;
-    vertical-align: top; 
-    text-align: right;
+	height: 60px;
 }
-.navbar{
-	margin-bottom: 50px;
+
+.dark {
+	background: #445;
+	color: #aaa;
+}
+.center{
+	text-align: center;
+	margin: auto;
+	height: 100%;
+	padding: 10px 0;
 }
 .right{
 	float:right;
