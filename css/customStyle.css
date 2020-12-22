@@ -17,15 +17,14 @@ body {
 }
 
 .footer{
-/*    width:100%;
+    width:100%;
     position:fixed;
-    bottom:0px;*/
+    bottom:0;
     background: #331;
     color: #ddb;
-/*    font-size: 200%;
-    height: 50px;
+    height: 30px;
     vertical-align: top; 
-    text-align: right;*/
+    text-align: right;
 }
 .navbar{
 	margin-bottom: 50px;

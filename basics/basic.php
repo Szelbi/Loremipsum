@@ -26,8 +26,11 @@
         }
 
         .color-row {
-            margin: 10px 0;
+            height: 10px;
+            width: 100%;
+            float: left;
         }
+
     </style>
 </head>
 
@@ -46,7 +49,7 @@
             <div class="col-md-8">
                 <div>
                     <h1 id="1">Lorem Ipsum123</h1>
-                    <div class="row" id="Tekst">
+                    <div class="row row-content" id="Tekst">
                         <button class="right btn btn-primary" onclick="hideDiv('tekst-content')">Chowanie</button>
                         <h4 id="2">Tekst</h4>
                         <div id="tekst-content" class="hidd">
@@ -55,7 +58,7 @@
                                 accumsan placerat, ligula mi interdum felis, <s>vitae <b>cursus</b> est</s> purus id
                                 purus. <em>Praesent feugiat</em>, nulla eget maximus ultricies, justo odio finibus
                                 ipsum, consectetur egestas lectus orci in ex. <strong>Etiam magna urna</strong>,
-                                facilisis non porttitor vel, viverra non ante. </br>Praesent ullamcorper tristique
+                                facilisis non porttitor vel, viverra non ante. </p>Praesent ullamcorper tristique
                                 pulvinar:
                             <blockquote>Donec suscipit volutpat dui et viverra. Pellentesque ac elit nec massa tempus
                                 elementum. Aliquam semper suscipit nibh sed euismod.
@@ -71,7 +74,7 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </div>
-                    <div class="row" id="Listy">
+                    <div class="row row-content" id="Listy">
                         <button class="right btn btn-primary" onclick="hideDiv('listy-content')">Chowanie</button>
                         <h4 id="3">Listy</h4>
                         <div id="listy-content" class="hidd">
@@ -88,7 +91,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="row" id="Obrazy">
+                    <div class="row row-content" id="Obrazy">
                         <button class="right btn btn-primary" onclick="hideDiv('obrazy-content')">Chowanie</button>
                         <h4 id="5">Obrazy (ze stylu css)</h4>
                         <div id="obrazy-content" class="hidd">
@@ -97,7 +100,7 @@
                             <img src="https://picsum.photos/600/300/?random" class="fotki"/>
                         </div>
                     </div>
-                    <div class="row" id="Tabele">
+                    <div class="row row-content" id="Tabele">
                         <button class="right btn btn-primary" onclick="hideDiv('tabele-content')">Chowanie</button>
                         <h4>Tabele</h4>
                         <div id="tabele-content" class="hidd">
@@ -129,7 +132,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="row" id="Formularze">
+                    <div class="row row-content" id="Formularze">
                         <button class="right btn btn-primary" onclick="hideDiv('formularze-content')">Chowanie</button>
                         <h4 id="7">Formularze</h4>
                         <div id="formularze-content" class="hidd">
@@ -199,7 +202,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" id="Dodatkowe">
+                    <div class="row row-content" id="Dodatkowe">
                         <button class="right btn btn-primary" onclick="hideDiv('elementy-content')">
                             Chowanie
                         </button>
@@ -213,7 +216,7 @@
                                     width="100%" height="400px"></iframe>
                         </div>
                     </div>
-                    <div class="row" id="Youtube">
+                    <div class="row row-content" id="Youtube">
                         <button class="right btn btn-primary" onclick="hideDiv('youtube-content')">
                             Chowanie
                         </button>
@@ -223,21 +226,25 @@
                             </iframe>
                         </div>
                     </div>
-                    <div class="row" id="Kolor">
-                        <button class="right btn btn-primary" onclick="hideDiv('kolor-content')">
-                            Chowanie
-                        </button>
-                        <h4>Flash, wideo i audio</h4>
-                        <div id="kolor-content" class="hidd">
-							<?php
-							echo '
-                                <div class="color-row"></div>
-                                <div class="color-row"></div>
-                                <div class="color-row"></div>';
-							?>
+                    <div class="row row-content" id="Kolor">
+                        <div class="button">
+                                <button  class="right btn btn-primary" onclick="hideDiv('kolor-content')">
+                                    Chowanie
+                                </button>
+                                <h4 >Kolorki</h4>
                         </div>
+
+
+                    </div>
+                    <div class="row" id="kolor-content" class="hidd">
+
+		                <?php
+		                for ($i = 1; $i < 10; $i++)
+			                echo '<div class="color-row" style="background-color: hsl('.rand(0,360).',100%,'.rand(20,80).'%)"></div>';
+		                ?>
                     </div>
                 </div>
+
             </div>
             <div class="sidebar-center col-md-4">
                 <div class="sidebar ">
