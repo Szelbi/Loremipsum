@@ -6,9 +6,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/loremipsum/css/bootstrap.min.css">
     <link rel="stylesheet" href="/loremipsum/css/customStyle.css">
-    <script src="/loremipsum/js/customScripts.js"></script>
     <script src="/loremipsum/js/jquery-3.5.1.min.js"></script>
     <script src="/loremipsum/js/bootstrap.min.js"></script>
+    <script src="/loremipsum/js/customScripts.js"></script>
+
 
     <style>
         .sidebar-center {
@@ -247,6 +248,17 @@
 							?>
                         </div>
                     </div>
+                    <div class="row row-content" id="Tekst2">
+                        <button class="btn btn-secondary" onclick="hideDiv('tekst2-content')">
+                            Chowanie
+                        </button>
+                        <h4>Tekst</h4>
+
+                        <div class="row" id="tekst2-content" class="hidd">
+                            <p>asdadad sad asdad asd a</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos necessitatibus placeat porro rerum, tempore veniam voluptatibus. Accusamus atque explicabo quisquam!</p>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -266,8 +278,8 @@
                         <li><a href="#Youtube">Flash, wideo i audio</a></li>
                         <li><a>Prezentacja CSS</a></li>
                         <li><a href="#Kolor">Kolor</a></li>
-                        <li><a href="#12">Tekst</a></li>
-                        <li><a href="#13">Pudełka elementów</a></li>
+                        <li><a href="#Tekst2" title="Rozszerzenie pkt 2.">Tekst</a></li>
+                        <li><a href="boxes.html">Pudełka elementów</a></li>
                         <li><a href="#14">Listy, tabele i formularze</a></li>
                         <li><a href="#15">Układ</a></li>
                         <li><a href="#16">Obrazy</a></li>
@@ -288,7 +300,7 @@
 </footer> -->
 
 <footer class="footer">
-    <div class="container">
+    <div>
         <span class="text-muted">Place sticky footer content here.</span>
     </div>
 </footer>
