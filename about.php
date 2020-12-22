@@ -17,7 +17,7 @@
 </header>
 
 <body>
-<main role="main">
+<main class="main">
 
     <div class="container">
         <h1>O nas</h1>
