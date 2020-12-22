@@ -100,9 +100,9 @@
                         <button class="btn btn-secondary" onclick="hideDiv('obrazy-content')">Chowanie</button>
                         <h4 id="5">Obrazy (ze stylu css)</h4>
                         <div id="obrazy-content" class="hidd">
-                            <img src="https://picsum.photos/1000/1000/?random" title="Obrazeczek" class="fotki"/>
-                            <img src="https://picsum.photos/250/600/?random" class="fotki"/>
-                            <img src="https://picsum.photos/600/300/?random" class="fotki"/>
+                            <img alt="" src="https://picsum.photos/1000/1000/?random" title="Obrazeczek" class="fotki"/>
+                            <img alt="" src="https://picsum.photos/250/600/?random" class="fotki"/>
+                            <img alt="" src="https://picsum.photos/600/300/?random" class="fotki"/>
                         </div>
                     </div>
                     <div class="row row-content" id="Tabele">
