@@ -49,7 +49,7 @@
                     rem repellat sint soluta tempore, velit vero voluptates?</p>
             </div>
         </div>
-        <p><a href="index.html">Powrót do strony głównej</a></p>
+        <p><a href="index.php">Powrót do strony głównej</a></p>
     </div>
 </main>
 
