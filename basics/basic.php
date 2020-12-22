@@ -30,6 +30,7 @@
             width: 100%;
             float: left;
         }
+
         .btn-secondary:hover {
             color: #fff;
             background-color: darkorange;
@@ -55,7 +56,8 @@
                 <div>
                     <h1 id="1">Lorem Ipsum123</h1>
                     <div class="row row-content" id="Tekst">
-                        <button class="hidd-button btn btn-secondary" onclick="hideDiv('tekst-content')">Chowanie</button>
+                        <button class="hidd-button btn btn-secondary" onclick="hideDiv('tekst-content')">Chowanie
+                        </button>
                         <h4 id="2">Tekst</h4>
                         <div id="tekst-content" class="hidd">
                             <p><img src="../img/300x200.jpg" max-height="120" align="right" style="margin: 10px"/>Lorem
@@ -64,7 +66,7 @@
                                 purus. <em>Praesent feugiat</em>, nulla eget maximus ultricies, justo odio finibus
                                 ipsum, consectetur egestas lectus orci in ex. <strong>Etiam magna urna</strong>,
                                 facilisis non porttitor vel, viverra non ante. </p>Praesent ullamcorper tristique
-                                pulvinar:
+                            pulvinar:
                             <blockquote>Donec suscipit volutpat dui et viverra. Pellentesque ac elit nec massa tempus
                                 elementum. Aliquam semper suscipit nibh sed euismod.
                             </blockquote>
@@ -232,22 +234,20 @@
                         </div>
                     </div>
                     <div class="row row-content" id="Kolor">
-                        <div class="button">
-                                <button  class="btn btn-secondary" onclick="hideDiv('kolor-content')">
-                                    Chowanie
-                                </button>
-                                <h4 >Kolorki</h4>
+                        <button class="btn btn-secondary" onclick="hideDiv('kolor-content')">
+                            Chowanie
+                        </button>
+                        <h4>Kolorki</h4>
+
+                        <div class="row" id="kolor-content" class="hidd">
+                            <p>asdadad sad asdad asd a</p>
+							<?php
+							for ($i = 1; $i < 10; $i++)
+								echo '<div class="color-row" style="background-color: hsl(' . rand(0, 360) . ',100%,' . rand(20, 80) . '%)"></div>';
+							?>
                         </div>
-
-
                     </div>
-                    <div class="row" id="kolor-content" class="hidd">
 
-		                <?php
-		                for ($i = 1; $i < 10; $i++)
-			                echo '<div class="color-row" style="background-color: hsl('.rand(0,360).',100%,'.rand(20,80).'%)"></div>';
-		                ?>
-                    </div>
                 </div>
 
             </div>
