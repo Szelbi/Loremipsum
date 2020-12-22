@@ -50,7 +50,7 @@
 
 <body>
 
-<main role="main">
+<main class="main">
     <div class="container">
         <div class="row">
             <div class="col-md-8">
@@ -279,7 +279,7 @@
                         <li><a>Prezentacja CSS</a></li>
                         <li><a href="#Kolor">Kolor</a></li>
                         <li><a href="#Tekst2" title="Rozszerzenie pkt 2.">Tekst</a></li>
-                        <li><a href="boxes.html">Pudełka elementów</a></li>
+                        <li><a href="boxes.php">Pudełka elementów</a></li>
                         <li><a href="#14">Listy, tabele i formularze</a></li>
                         <li><a href="#15">Układ</a></li>
                         <li><a href="#16">Obrazy</a></li>
