@@ -28,12 +28,11 @@
 
 
 <header>
-    <div id="nav-placeholder">
-    </div>
+	<?php include($_SERVER['DOCUMENT_ROOT'].'/loremipsum/navbar.html') ?>
 </header>
 
 <body>
-<main role="main">
+<main class="main">
 
     <div class="container col-md-8">
         <button id="show">Pokaż</button>
@@ -61,5 +60,9 @@
         $("#nav-placeholder").load("/loremipsum/navbar.html");
     });
 </script>
+
+<footer>
+	<?php include($_SERVER['DOCUMENT_ROOT'].'/loremipsum/footer.html') ?>
+</footer>
 
 </html>
