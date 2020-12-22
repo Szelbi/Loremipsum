@@ -83,6 +83,7 @@
 </header>
 <body>
 
+<main class="main">
 <div>
 	<?php
 
@@ -106,6 +107,7 @@
 
 
 </div>
+</main>
 
 </body>
 
