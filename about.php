@@ -13,8 +13,7 @@
 
 
 <header>
-    <div id="nav-placeholder">
-    </div>
+	<?php include($_SERVER['DOCUMENT_ROOT'].'/loremipsum/navbar.html') ?>
 </header>
 
 <body>
@@ -46,16 +45,14 @@
                 Google zapewniamy jeszcze bardziej konkurencyjne rozwiązania, a co za tym idzie – wspieramy
                 konkurencyjność naszych Klientów.</p>
         </div>
-        <p><a href="index.html">Powrót do strony głównej</a></p>
+        <p><a href="index.php">Powrót do strony głównej</a></p>
     </div>
 </main>
 
 </body>
 
-<script>
-    $(function(){
-        $("#nav-placeholder").load("/loremipsum/navbar.html");
-    });
-</script>
+<footer>
+	<?php include($_SERVER['DOCUMENT_ROOT'].'/loremipsum/footer.html') ?>
+</footer>
 
 </html>
