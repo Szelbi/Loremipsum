@@ -265,7 +265,7 @@
             </div>
             <div class="sidebar-center col-md-4">
                 <div class="sidebar ">
-                    <h2 style="text-align: center"><a href="../about.html">O nas</a></h2>
+                    <h2 style="text-align: center"><a href="../about.php">O nas</a></h2>
                     <ol>
                         <li><a href="#1">Struktura</a></li>
                         <li><a href="#Tekst">Tekst</a></li>

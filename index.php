@@ -24,7 +24,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
-            <p><a href="index.html">Powrót do strony głównej</a></p>
+            <p><a href="index.php">Powrót do strony głównej</a></p>
             <h1 class="display-3">Strona główna</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae blanditiis nisi optio pariatur tempore voluptatum! Accusamus at dolorem dolorum ex explicabo fuga necessitatibus quibusdam quo saepe voluptates. Assumenda culpa cumque, dicta ducimus ea eos est et ex hic impedit, incidunt, laborum laudantium minus nemo perferendis quae quaerat quam quas quidem reiciendis repellat sed tempora tempore voluptates voluptatum. Aliquid commodi eius eos et illum inventore, necessitatibus odit, placeat provident quas repellat sequi, temporibus. Accusamus ex hic illum molestias odio reiciendis. Accusantium, aut corporis delectus dignissimos earum enim est id, iure magni molestiae natus nobis non nostrum quaerat quam rem reprehenderit voluptates.</p>
             <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
@@ -49,7 +49,7 @@
                 <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
                     porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
                     ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-primary" href="about.html" role="button">View details »</a></p>
+                <p><a class="btn btn-primary" href="about.php" role="button">View details »</a></p>
             </div>
             <div class="col-md-4">
                 <h2>Ajcke Jquery</h2>

@@ -5,33 +5,44 @@ body {
 }
 .main{
 	padding-top: 80px;
-	padding-bottom: 120px;
+	padding-bottom: 80px;
 }
 .container {
 	border: 1px solid red;
 	/*padding: 60px 15px 0;*/
 }
 .border-orange {
-	background: rgba(255,150,0,0.1);
+	background: rgba(255,150,0,0.02);
 	border: 1px solid orange;
 }
 
 .footer{
     width:100%;
-    position:fixed;
+	/*text-align: center;*/
+    /*position:fixed;*/
     bottom:0;
-	height: 60px;
+	height: 40px;
+	/*display:flex;*/
 }
 
 .dark {
 	background: #445;
-	color: #aaa;
+	color: #889;
+}
+.text-grey{
+	background-color: transparent;
+	color: #889;
+	text-decoration: none
+}
+.text-grey:hover{
+	background-color: transparent;
+	color: #889;
+	text-decoration: none
 }
 .center{
 	text-align: center;
-	margin: auto;
-	height: 100%;
-	padding: 10px 0;
+	/*margin: auto;*/
+	padding: 5px 0;
 }
 .right{
 	float:right;

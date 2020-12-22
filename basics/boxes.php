@@ -84,8 +84,6 @@
         .center-box {
             width: 70%;
             margin: 0 auto;
-            background-color: hsla(40, 80%, 50%, 0.05);
-            border: 1px solid hsla(40, 80%, 50%, 1);
         }
 
         .box {
@@ -112,6 +110,7 @@
             overflow: hidden;
         }
 
+
     </style>
 
 </head>
@@ -120,8 +119,7 @@
     <!--    <div id="nav-placeholder">-->
     <!--    </div>-->
 
-
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="navbar">
         <a class="navbar-brand" href="/loremipsum/index.html">Home</a>
 
         <div class="navbar-collapse">
@@ -149,15 +147,6 @@
                         <a class="dropdown-item" href="#">Empty_2</a>
                     </div>
                 </li>
-                <li class="dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown link </a>
-
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
 
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -170,8 +159,8 @@
 
 <body>
 
-<main class="main">
-    <div class="center-box">
+<main class="main" id="main">
+    <div class="center-box border-orange">
 
         <div class="box box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequuntur cupiditate
             deserunt nihil nisi optio porro quasi vel vero voluptate. A aut doloribus error fuga illum ipsa, ipsum iusto
@@ -208,9 +197,7 @@
         <div class="box">
             <div class="box3">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis, dolore ducimus est
-                minima non possimus quam quidem quisquam ullam. Adipisci cum deserunt minima perspiciatis tenetur? Ab
-                accusantium commodi consequatur, cum deserunt dicta est et, iure magnam molestias nemo, nesciunt non
-                odio praesentium qui quibusdam quisquam sequi sint suscipit voluptatibus.
+                minima non possimus quam quidem quisquam ullam.
             </div>
         </div>
         <div class="border-orange box " style="display:flex;">
@@ -218,16 +205,7 @@
             <p style="border: 1px solid black; margin: auto">
                 <strong>Dawid Gos</strong> 2020. All right reserved.
             </p>
-        </div>
-        <div class="border-orange box " style="display:flex; justify-content: center">
-            <p style="border: 1px solid black;">
-                <strong>Dawid Gos</strong> 2020. All right reserved.
-            </p>
-        </div>
-        <div class="border-orange box">
-            <p style="border: 1px solid black;">
-                <strong>Dawid Gos</strong> 2020. All right reserved.
-            </p>
+
         </div>
     </div>
 
@@ -236,18 +214,8 @@
 </body>
 
 
-<footer class="footer dark">
-
-    <div class="row center" style="display: flex;">
-        <div class="col-md-3">
-        </div>
-        <div class="col-md-6 center">
-            <a>© <strong>Dawid Gos</strong> 2020. All right reserved.</a>
-        </div>
-        <div class="col-md-3 center">
-            <a>© <strong>Dawid Gos</strong> 2020. All right reserved.</a>
-        </div>
-    </div>
+<footer>
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/loremipsum/footer.html') ?>
 </footer>
 
 </html>

@@ -13,7 +13,7 @@
 
 
 <header>
-	<?php include($_SERVER['DOCUMENT_ROOT'].'/loremipsum/navbar.html') ?>
+	<?php include($_SERVER['DOCUMENT_ROOT'].'/loremipsum/navbar.php') ?>
 </header>
 
 <body>

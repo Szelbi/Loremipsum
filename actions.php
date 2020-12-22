@@ -28,7 +28,7 @@
 
 
 <header>
-	<?php include($_SERVER['DOCUMENT_ROOT'].'/loremipsum/navbar.html') ?>
+	<?php include($_SERVER['DOCUMENT_ROOT'].'/loremipsum/navbar.php') ?>
 </header>
 
 <body>
@@ -57,7 +57,7 @@
 
 <script>
     $(function () {
-        $("#nav-placeholder").load("/loremipsum/navbar.html");
+        $("#nav-placeholder").load("/loremipsum/navbar.php");
     });
 </script>
 
