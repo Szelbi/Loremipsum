@@ -30,6 +30,11 @@
             width: 100%;
             float: left;
         }
+        .btn-secondary:hover {
+            color: #fff;
+            background-color: darkorange;
+            border-color: #545b62;
+        }
 
     </style>
 </head>
@@ -50,7 +55,7 @@
                 <div>
                     <h1 id="1">Lorem Ipsum123</h1>
                     <div class="row row-content" id="Tekst">
-                        <button class="right btn btn-primary" onclick="hideDiv('tekst-content')">Chowanie</button>
+                        <button class="hidd-button btn btn-secondary" onclick="hideDiv('tekst-content')">Chowanie</button>
                         <h4 id="2">Tekst</h4>
                         <div id="tekst-content" class="hidd">
                             <p><img src="../img/300x200.jpg" max-height="120" align="right" style="margin: 10px"/>Lorem
@@ -75,7 +80,7 @@
                         </div>
                     </div>
                     <div class="row row-content" id="Listy">
-                        <button class="btn btn-primary" onclick="hideDiv('listy-content')">Chowanie</button>
+                        <button class="btn btn-secondary" onclick="hideDiv('listy-content')">Chowanie</button>
                         <h4 id="3">Listy</h4>
                         <div id="listy-content" class="hidd">
                             <ul>
@@ -92,7 +97,7 @@
                         </div>
                     </div>
                     <div class="row row-content" id="Obrazy">
-                        <button class="btn btn-primary" onclick="hideDiv('obrazy-content')">Chowanie</button>
+                        <button class="btn btn-secondary" onclick="hideDiv('obrazy-content')">Chowanie</button>
                         <h4 id="5">Obrazy (ze stylu css)</h4>
                         <div id="obrazy-content" class="hidd">
                             <img src="https://picsum.photos/1000/1000/?random" title="Obrazeczek" class="fotki"/>
@@ -101,7 +106,7 @@
                         </div>
                     </div>
                     <div class="row row-content" id="Tabele">
-                        <button class="btn btn-primary" onclick="hideDiv('tabele-content')">Chowanie</button>
+                        <button class="btn btn-secondary" onclick="hideDiv('tabele-content')">Chowanie</button>
                         <h4>Tabele</h4>
                         <div id="tabele-content" class="hidd">
                             <table align="center" class="table" style="width:70%">
@@ -133,7 +138,7 @@
                         </div>
                     </div>
                     <div class="row row-content" id="Formularze">
-                        <button class="btn btn-primary" onclick="hideDiv('formularze-content')">Chowanie</button>
+                        <button class="btn btn-secondary" onclick="hideDiv('formularze-content')">Chowanie</button>
                         <h4 id="7">Formularze</h4>
                         <div id="formularze-content" class="hidd">
                             <div class="ib" id="login">
@@ -203,7 +208,7 @@
                         </div>
                     </div>
                     <div class="row row-content" id="Dodatkowe">
-                        <button class="btn btn-primary" onclick="hideDiv('elementy-content')">
+                        <button class="btn btn-secondary" onclick="hideDiv('elementy-content')">
                             Chowanie
                         </button>
                         <h4>Dodatkowe elementy HTML</h4>
@@ -217,7 +222,7 @@
                         </div>
                     </div>
                     <div class="row row-content" id="Youtube">
-                        <button class="btn btn-primary" onclick="hideDiv('youtube-content')">
+                        <button class="btn btn-secondary" onclick="hideDiv('youtube-content')">
                             Chowanie
                         </button>
                         <h4>Flash, wideo i audio</h4>
@@ -228,7 +233,7 @@
                     </div>
                     <div class="row row-content" id="Kolor">
                         <div class="button">
-                                <button  class="btn btn-primary" onclick="hideDiv('kolor-content')">
+                                <button  class="btn btn-secondary" onclick="hideDiv('kolor-content')">
                                     Chowanie
                                 </button>
                                 <h4 >Kolorki</h4>
