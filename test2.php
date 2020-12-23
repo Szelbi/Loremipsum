@@ -23,6 +23,8 @@
 <!--<main class="main ">-->
 <main class="main border-orange">
 
+    <h3>Footer test</h3>
+
     <button type="button" id="button" onclick="myFunction()">Duplicate</button>
 
 
