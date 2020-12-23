@@ -1,11 +1,16 @@
+html, body {
+	height: 100%;
+}
 body {
 	font-family: Tahoma, "Courier New", Courier, monospace;
 	color: #777;
-	/*height: 2000px;*/
+	display: flex; /*Uzyte do organizacji footera*/
+	flex-direction: column; /*Uzyte do organizacji footera*/
 }
 .main{
 	padding-top: 80px;
 	padding-bottom: 80px;
+	flex: 1 0 auto; /*Uzyte do organizacji footera*/
 }
 .border-red {
 	background: rgba(255,0,0,0.02);
@@ -15,6 +20,10 @@ body {
 .border-orange {
 	background: rgba(255,150,0,0.02);
 	border: 1px solid orange;
+}
+.border-green {
+	background: rgba(00,200,00,0.02);
+	border: 1px solid green;
 }
 
 .dark {
