@@ -78,9 +78,9 @@
 </head>
 
 <header>
-    <div id="nav-placeholder">
-    </div>
+	<?php include($_SERVER['DOCUMENT_ROOT'].'/loremipsum/navbar.php') ?>
 </header>
+
 <body>
 
 <main class="main">

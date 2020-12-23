@@ -11,12 +11,6 @@
     <script src="/loremipsum/js/bootstrap.min.js"></script>
     <!--    <script src="/loremipsum/js/customScripts.js"></script>-->
 
-    <script>
-        $(function () {
-            $("#nav-placeholder").load("/loremipsum/navbar.html");
-        });
-    </script>
-
     <style>
 
         /*.mr-auto3 {*/
@@ -116,8 +110,6 @@
 </head>
 
 <header>
-    <!--    <div id="nav-placeholder">-->
-    <!--    </div>-->
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="navbar">
         <a class="navbar-brand" href="/loremipsum/index.html">Home</a>

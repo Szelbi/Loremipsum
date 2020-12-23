@@ -13,10 +13,8 @@
 <body>
 
 <header>
-    <div id="nav-placeholder">
-    </div>
+	<?php include($_SERVER['DOCUMENT_ROOT'].'/loremipsum/navbar.php') ?>
 </header>
-
 
 
 <main role="main">
