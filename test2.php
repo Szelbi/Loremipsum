@@ -13,25 +13,24 @@
     </script>
 
 
-    <style>
-
-    </style>
 </head>
 
-<footer>
+<header>
 	<?php include($_SERVER['DOCUMENT_ROOT'] . '/loremipsum/navbar.php') ?>
-</footer>
+</header>
 
 <body>
-<main class="main ">
-<div class="content border-orange">
+<!--<main class="main ">-->
+<main class="main border-orange">
 
     <button type="button" id="button" onclick="myFunction()">Duplicate</button>
 
 
-    <p id="output">Lore ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda aut debitis deserunt dignissimos dolore dolorum ea fuga itaque iusto libero magni nam, nostrum obcaecati, quaerat quidem quis soluta unde?</p>
-</div>
+    <p id="output">Lore ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda aut debitis deserunt
+        dignissimos dolore dolorum ea fuga itaque iusto libero magni nam, nostrum obcaecati, quaerat quidem quis soluta
+        unde?</p>
 </main>
+<!--</main>-->
 
 </body>
 
