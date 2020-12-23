@@ -68,14 +68,10 @@
 
 </main>
 
-<footer class="container">
-    <p>© Dawid Gos 2020</p>
+<footer>
+	<?php include($_SERVER['DOCUMENT_ROOT'].'/loremipsum/footer.html') ?>
 </footer>
 
-<script>
-    $(function(){
-        $("#nav-placeholder").load("navbar.html");
-    });
-</script>
+
 </body>
 </html>

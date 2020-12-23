@@ -43,7 +43,7 @@
 
 
 <header>
-	<?php include($_SERVER['DOCUMENT_ROOT'].'/loremipsum/navbar.php') ?>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . '/loremipsum/navbar.php') ?>
 </header>
 
 
@@ -255,7 +255,8 @@
 
                         <div class="row" id="tekst2-content" class="hidd">
                             <p>asdadad sad asdad asd a</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos necessitatibus placeat porro rerum, tempore veniam voluptatibus. Accusamus atque explicabo quisquam!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos necessitatibus placeat
+                                porro rerum, tempore veniam voluptatibus. Accusamus atque explicabo quisquam!</p>
                         </div>
                     </div>
 
@@ -292,25 +293,11 @@
         </div>
     </div>
 </main>
-<!-- <footer class="footer">
-    <div class="container"">
-        <a style="color:#ddd; " href="to_test.html"><strong>testy.html</strong></a>
-    </div>
-</footer> -->
-
-<footer class="footer">
-    <div>
-        <span class="text-muted">Place sticky footer content here.</span>
-    </div>
-</footer>
-
-<script>
-    $(function () {
-        $("#nav-placeholder").load("/loremipsum/navbar.html");
-    });
-</script>
-
 </body>
+
+<footer>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . '/loremipsum/footer.html') ?>
+</footer>
 
 
 </html>

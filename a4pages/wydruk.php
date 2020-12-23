@@ -101,7 +101,6 @@
                 </page>';
 		}
 	}
-	echo '<div>123</div>';
 
 	?>
 
@@ -111,11 +110,10 @@
 
 </body>
 
-<script>
-    $(function () {
-        $("#nav-placeholder").load("/loremipsum/navbar.html");
-    });
-</script>
+<footer>
+	<?php include($_SERVER['DOCUMENT_ROOT'].'/loremipsum/footer.html') ?>
+</footer>
+
 
 </html>
 

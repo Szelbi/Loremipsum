@@ -55,12 +55,6 @@
 
 </body>
 
-<script>
-    $(function () {
-        $("#nav-placeholder").load("/loremipsum/navbar.php");
-    });
-</script>
-
 <footer>
 	<?php include($_SERVER['DOCUMENT_ROOT'].'/loremipsum/footer.html') ?>
 </footer>

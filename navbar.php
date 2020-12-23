@@ -15,8 +15,6 @@
 		<span class="navbar-toggler-icon"></span>
 	</button>
 
-	<p class="abc">abc</p>
-
 	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
