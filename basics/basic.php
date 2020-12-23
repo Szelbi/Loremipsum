@@ -26,6 +26,11 @@
             text-align: center;
         }
 
+        .fotki {
+            max-height: 250px;
+            max-width: 250px;
+        }
+
         .sidebar-center {
             display: flex;
             justify-content: center;
