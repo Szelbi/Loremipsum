@@ -85,8 +85,8 @@
             padding: 20px;
             min-width: 400px;
             max-width: 1200px;
-            min-height: 200px;
-            max-height: 300px;
+            min-height: 80px;
+            max-height: 150px;
             background-color: hsla(190, 80%, 50%, 0.05);
             border: 1px solid hsla(190, 80%, 50%, 1);
         }
@@ -112,7 +112,7 @@
 <header>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="navbar">
-        <a class="navbar-brand" href="/loremipsum/index.html">Home</a>
+        <a class="navbar-brand" href="/loremipsum/index.php">Home</a>
 
         <div class="navbar-collapse">
             <ul class="navbar-nav mr-auto">
@@ -123,7 +123,7 @@
                     <a class="nav-link" href="/loremipsum/basics/basic.php">Basics</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="/loremipsum/actions.html">Actions</a>
+                    <a class="nav-link" href="/loremipsum/actions.php">Actions</a>
                 </li>
                 <li>
                     <a class="nav-link" href="/loremipsum/a4pages/wydruk.php">A4 Pages</a>
@@ -185,12 +185,6 @@
             Architecto aut error harum labore odit pariatur quibusdam sint, ullam veritatis voluptatum? Ad aut dicta,
             esse eum id impedit iste maxime mollitia nihil placeat qui quidem recusandae saepe sapiente similique,
             temporibus ut veritatis.
-        </div>
-        <div class="box">
-            <div class="box3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis, dolore ducimus est
-                minima non possimus quam quidem quisquam ullam.
-            </div>
         </div>
         <div class="border-orange box " style="display:flex;">
             <!--            <strong>Dawid Gos</strong> 2020. All right reserved.-->
