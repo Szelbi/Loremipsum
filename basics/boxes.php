@@ -104,6 +104,20 @@
             overflow: hidden;
         }
 
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .main {
+            min-height: 100%;
+        }
+
+        .footer {
+            height: 50px;
+            margin-top: -50px;
+        }
+
 
     </style>
 
@@ -130,6 +144,9 @@
                 </li>
                 <li>
                     <a class="nav-link" href="/loremipsum/colors.php">Kolorki</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/loremipsum/test.php">Test</a>
                 </li>
                 <li class="dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Example templates</a>
@@ -162,13 +179,7 @@
             repellat soluta sunt, ut. Consequatur in modi sapiente? Animi asperiores assumenda consectetur consequuntur
             debitis dignissimos dolorum eaque eius error et exercitationem, facere illum ipsa, laboriosam maiores
             molestiae molestias mollitia nemo nisi perspiciatis quam quas quisquam quod rerum saepe sunt tempore unde
-            velit vero voluptatum. Alias, aliquam animi architecto asperiores consectetur delectus distinctio dolor
-            dolores ea error esse excepturi expedita explicabo facere id illum in incidunt iusto laborum molestiae neque
-            numquam obcaecati provident quam ratione repellat sapiente sed similique unde veniam vero vitae voluptatibus
-            voluptatum. Animi cum deleniti doloribus incidunt laudantium nihil nulla, quas? Dolore, inventore, unde?
-            Architecto aut error harum labore odit pariatur quibusdam sint, ullam veritatis voluptatum? Ad aut dicta,
-            esse eum id impedit iste maxime mollitia nihil placeat qui quidem recusandae saepe sapiente similique,
-            temporibus ut veritatis.
+            velit vero voluptatum.
         </div>
         <div class="box box2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequuntur cupiditate
             deserunt nihil nisi optio porro quasi vel vero voluptate. A aut doloribus error fuga illum ipsa, ipsum iusto
@@ -178,13 +189,7 @@
             repellat soluta sunt, ut. Consequatur in modi sapiente? Animi asperiores assumenda consectetur consequuntur
             debitis dignissimos dolorum eaque eius error et exercitationem, facere illum ipsa, laboriosam maiores
             molestiae molestias mollitia nemo nisi perspiciatis quam quas quisquam quod rerum saepe sunt tempore unde
-            velit vero voluptatum. Alias, aliquam animi architecto asperiores consectetur delectus distinctio dolor
-            dolores ea error esse excepturi expedita explicabo facere id illum in incidunt iusto laborum molestiae neque
-            numquam obcaecati provident quam ratione repellat sapiente sed similique unde veniam vero vitae voluptatibus
-            voluptatum. Animi cum deleniti doloribus incidunt laudantium nihil nulla, quas? Dolore, inventore, unde?
-            Architecto aut error harum labore odit pariatur quibusdam sint, ullam veritatis voluptatum? Ad aut dicta,
-            esse eum id impedit iste maxime mollitia nihil placeat qui quidem recusandae saepe sapiente similique,
-            temporibus ut veritatis.
+            velit vero voluptatum.
         </div>
         <div class="border-orange box " style="display:flex;">
             <!--            <strong>Dawid Gos</strong> 2020. All right reserved.-->
