@@ -1,5 +1,7 @@
+<link rel="stylesheet" href="/loremipsum/css/bootstrap.min.css">
+
 <style>
-	.btn-outline-success {
+	.btn-rand-color {
 		<?php
 		$color = rand(0,360);
 		echo "color: hsl($color, 100%, 50%);
@@ -15,34 +17,34 @@
 		<span class="navbar-toggler-icon"></span>
 	</button>
 
-	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+	<div class="collapse navbar-collapse">
 		<ul class="navbar-nav mr-auto">
-			<li class="nav-item">
+			<li>
 				<a class="nav-link" href="/loremipsum/about.php">About</a>
 			</li>
-			<li class="nav-item">
+			<li>
 				<a class="nav-link" href="/loremipsum/basics/basic.php">Basics</a>
 			</li>
-			<li class="nav-item">
+			<li>
 				<a class="nav-link" href="/loremipsum/actions.php">Actions</a>
 			</li>
-			<li class="nav-item">
+			<li>
 				<a class="nav-link" href="/loremipsum/a4pages/wydruk.php">A4 Pages</a>
 			</li>
-			<li class="nav-item">
+			<li>
 				<a class="nav-link" href="/loremipsum/colors.php">Kolorki</a>
 			</li>
-			<li class="nav-item">
+			<li>
 				<a class="nav-link" href="/loremipsum/basics/boxes.php">Boxes</a>
 			</li>
-			<li class="nav-item">
+			<li>
 				<a class="nav-link" href="/loremipsum/test2.php">Test</a>
 			</li>
-			<li class="nav-item dropdown" >
+			<li class="dropdown" >
 				<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Example templates
 				</a>
-				<div class="nav-item dropdown-menu" aria-labelledby="dropdown01">
+				<div class="dropdown-menu" aria-labelledby="dropdown01">
 					<a class="dropdown-item" href="/loremipsum/bootstrap_test.html">Bootstrap simple template</a>
 					<a class="dropdown-item" href="#">Empty_1</a>
 					<a class="dropdown-item" href="#">Empty_2</a>
@@ -50,9 +52,9 @@
 			</li>
 
 		</ul>
-		<form class="form-inline my-2 my-lg-0">
+		<form class="form-inline">
 			<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			<button class="btn btn-rand-color" type="submit">Search</button>
 		</form>
 	</div>
 </nav>
