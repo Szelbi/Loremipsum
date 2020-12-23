@@ -104,21 +104,6 @@
             overflow: hidden;
         }
 
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
-
-        .main {
-            min-height: 100%;
-        }
-
-        .footer {
-            height: 50px;
-            margin-top: -50px;
-        }
-
-
     </style>
 
 </head>
