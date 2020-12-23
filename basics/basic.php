@@ -12,6 +12,20 @@
 
 
     <style>
+
+        div.ib {
+            display: inline-block;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+            background: #Ccc;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 7px;
+            text-align: center;
+        }
+
         .sidebar-center {
             display: flex;
             justify-content: center;
