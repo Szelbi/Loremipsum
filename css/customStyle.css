@@ -7,22 +7,14 @@ body {
 	padding-top: 80px;
 	padding-bottom: 80px;
 }
-.container {
+.border-red {
+	background: rgba(255,0,0,0.02);
 	border: 1px solid red;
 	/*padding: 60px 15px 0;*/
 }
 .border-orange {
 	background: rgba(255,150,0,0.02);
 	border: 1px solid orange;
-}
-
-.footer{
-    width:100%;
-	/*text-align: center;*/
-    /*position:fixed;*/
-    bottom:0;
-	height: 40px;
-	/*display:flex;*/
 }
 
 .dark {
@@ -49,24 +41,4 @@ body {
 }
 .hidd{
 	display:none;
-}
-.fotki {
-	max-height: 250px;
-	max-width: 250px;
-}
-table {
-	/*border-collapse: collapse;*/
-}
-
-div.ib {
-	display: inline-block;
-	border: 1px solid black;
-	padding: 10px;
-	margin: 5px;
-	background: #Ccc;
-}
-table, th, td {
-	border: 1px solid black;
-	padding: 7px;
-	text-align: center;
 }
