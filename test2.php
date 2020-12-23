@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Test</title>
-
+    <link rel="stylesheet" href="/loremipsum/css/bootstrap.min.css">
     <link rel="stylesheet" href="/loremipsum/css/customStyle.css">
+
 
     <script>
         function myFunction() {
