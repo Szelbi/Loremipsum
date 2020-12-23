@@ -35,6 +35,9 @@
 			<li class="nav-item">
 				<a class="nav-link" href="/loremipsum/basics/boxes.php">Boxes</a>
 			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/loremipsum/test.php">Test</a>
+			</li>
 			<li class="nav-item dropdown" >
 				<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Example templates
