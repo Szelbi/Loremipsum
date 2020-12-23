@@ -10,21 +10,8 @@
     <script src="/loremipsum/js/bootstrap.min.js"></script>
     <script src="/loremipsum/js/customScripts.js"></script>
 
-
-
-    <style>
-        .container {
-            border: 1px solid;
-            background: rgba(255, 160, 200, 0.5);
-        }
-
-        .card {
-            border: 1px solid;
-            background: rgba(200, 190, 250, 0.5);
-        }
-
-    </style>
 </head>
+
 
 
 <header>
@@ -34,12 +21,12 @@
 <body>
 <main class="main">
 
-    <div class="container col-md-8">
+    <div class="container col-md-8 border-red">
         <button id="show">Pokaż</button>
         <button id="hide">Ukryj!</button>
 
-        <h1>Akcje jQuery</h1>
-        <div class="card" style="display: none">
+        <h1>Akcje jQuery.</h1>
+        <div class="card border-orange" style="display: none">
             <div>
                 <h2>Tekst</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aliquid beatae deleniti deserunt
