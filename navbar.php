@@ -1,4 +1,7 @@
 <!--<link rel="stylesheet" href="/loremipsum/css/bootstrap.min.css">-->
+<script src="/loremipsum/js/jquery-3.5.1.min.js"></script>
+<script src="/loremipsum/js/bootstrap.min.js"></script>
+<script src="/loremipsum/js/customScripts.js"></script>
 
 <style>
     .btn-rand-color {
@@ -17,13 +20,7 @@
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
             <li>
-                <a class="nav-link" href="/loremipsum/about.php">About</a>
-            </li>
-            <li>
                 <a class="nav-link" href="/loremipsum/basics/basic.php">Basics</a>
-            </li>
-            <li>
-                <a class="nav-link" href="/loremipsum/actions.php">Actions</a>
             </li>
             <li>
                 <a class="nav-link" href="/loremipsum/a4pages/wydruk.php">A4 Pages</a>
@@ -34,9 +31,6 @@
             <li>
                 <a class="nav-link" href="/loremipsum/basics/boxes.php">Boxes</a>
             </li>
-            <li>
-                <a class="nav-link" href="/loremipsum/test2.php">Test</a>
-            </li>
             <li class="dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
                    aria-expanded="false">
@@ -44,6 +38,20 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
                     <a class="dropdown-item" href="/loremipsum/bootstrap_test.html">Bootstrap simple template</a>
+                    <a class="dropdown-item" href="#">Empty_1</a>
+                    <a class="dropdown-item" href="#">Empty_2</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    Simples subpages
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="/loremipsum/about.php">About</a>
+                    <a class="dropdown-item" href="/loremipsum/actions.php">Actions</a>
+                    <a class="dropdown-item" href="/loremipsum/test2.php">Test</a>
+                    <a class="dropdown-item" href="/loremipsum/php_globals.php">PHP $GLOBALS</a>
                     <a class="dropdown-item" href="#">Empty_1</a>
                     <a class="dropdown-item" href="#">Empty_2</a>
                 </div>
