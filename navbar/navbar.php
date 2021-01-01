@@ -1,7 +1,8 @@
 <link rel="stylesheet" href="/loremipsum/css/bootstrap.min.css">
 <link rel="stylesheet" href="/loremipsum/navbar/navbar.css">
+<script src="/loremipsum/navbar/navbar.js"></script>
 <script src="/loremipsum/js/jquery-3.5.1.min.js"></script>
-<script src="/loremipsum/js/bootstrap.min.js"></script>
+<!--<script src="/loremipsum/js/bootstrap.min.js"></script>-->
 <!--<script src="/loremipsum/js/customScripts.js"></script>-->
 
 <style>
@@ -31,6 +32,19 @@
             </li>
             <li>
                 <a class="nav-link" href="/loremipsum/basics/boxes.php">Boxes</a>
+            </li>
+            <li>
+                <a class="nav-link" href="/loremipsum/basics/boxes.php">Boxes</a>
+            </li>
+            <li>
+                <div class="nav-link dropdown">
+                    <button id="1" onClick="dropdownFunction(this.id)" class="dropbtn">Dropdown</button>
+                    <div id="myDropdown1" class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
             </li>
             <li class="dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
@@ -67,3 +81,45 @@
 </nav>
 
 
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <div class="dropdown">
+        <button class="dropbtn" onClick="dropdownFunction(this.id)">Dropdown
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown2">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+</div>
+
+
+
+<button id="1" onclick="reply_click(this.id)">B1</button>
+<button id="2" onClick="reply_click(this.id)">B2</button>
+<button id="3" onClick="reply_click(this.id)">B3</button>
+<button id="4" onClick="reply_click2()">B4</button>
+
+<script type="text/javascript">
+    function reply_click(clicked_id)
+    {
+        alert(clicked_id);
+    }
+
+
+    function reply_click2()
+    {
+        var idClicked = this.id;
+        alert(idClicked);
+    }
+
+    function dropdownFunction(elemtID) {
+        alert(elemtID);
+        alert(this.id);
+        document.getElementById(elemtID).classList.toggle("show");
+    }
+
+</script>
