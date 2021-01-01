@@ -37,6 +37,7 @@
 
 .dropbtn:focus {
     border: none;
+    outline: none;
 }
 
 /* Navbar element */
