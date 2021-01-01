@@ -17,7 +17,7 @@
 </head>
 
 <header>
-	<?php include($_SERVER['DOCUMENT_ROOT'] . '/loremipsum/navbar.php') ?>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . '/loremipsum/navbar/navbar.php') ?>
 </header>
 
 <body>
