@@ -1,7 +1,8 @@
-<!--<link rel="stylesheet" href="/loremipsum/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/loremipsum/css/bootstrap.min.css">
+<link rel="stylesheet" href="/loremipsum/navbar/navbar.css">
 <script src="/loremipsum/js/jquery-3.5.1.min.js"></script>
 <script src="/loremipsum/js/bootstrap.min.js"></script>
-<script src="/loremipsum/js/customScripts.js"></script>
+<!--<script src="/loremipsum/js/customScripts.js"></script>-->
 
 <style>
     .btn-rand-color {
@@ -47,7 +48,7 @@
                    aria-expanded="false">
                     Simples subpages
                 </a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <div class="dropdown-menu" aria-labelledby="dropdown02">
                     <a class="dropdown-item" href="/loremipsum/about.php">About</a>
                     <a class="dropdown-item" href="/loremipsum/actions.php">Actions</a>
                     <a class="dropdown-item" href="/loremipsum/test2.php">Test</a>
