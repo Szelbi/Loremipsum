@@ -1,9 +1,7 @@
 <link rel="stylesheet" href="/loremipsum/css/bootstrap.min.css">
-<link rel="stylesheet" href="/loremipsum/navbar/navbar.css">
-<script src="/loremipsum/navbar/navbar.js"></script>
 <script src="/loremipsum/js/jquery-3.5.1.min.js"></script>
-<!--<script src="/loremipsum/js/bootstrap.min.js"></script>-->
-<!--<script src="/loremipsum/js/customScripts.js"></script>-->
+<script src="/loremipsum/navbar/navbar.js"></script>
+<link rel="stylesheet" href="/loremipsum/navbar/navbar.css">
 
 <style>
     .btn-rand-color {
@@ -25,50 +23,41 @@
                 <a class="nav-link" href="/loremipsum/basics/basic.php">Basics</a>
             </li>
             <li>
-                <a class="nav-link" href="/loremipsum/a4pages/wydruk.php">A4 Pages</a>
+                <a class="nav-elem" href="/loremipsum/a4pages/wydruk.php">A4 Pages</a>
             </li>
             <li>
-                <a class="nav-link" href="/loremipsum/colors.php">Kolorki</a>
+                <a class="nav-elem" href="/loremipsum/basics/boxes.php">Boxes</a>
             </li>
             <li>
-                <a class="nav-link" href="/loremipsum/basics/boxes.php">Boxes</a>
-            </li>
-            <li>
-                <a class="nav-link" href="/loremipsum/basics/boxes.php">Boxes</a>
-            </li>
-            <li>
-                <div class="nav-link dropdown">
-                    <button id="1" onClick="dropdownFunction(this.id)" class="dropbtn">Dropdown</button>
-                    <div id="myDropdown1" class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                <div class="nav-elem">
+                    <button class="dropbtn collapsible">Colors</button>
+                    <div class="dropdown-content">
+                        <a href="/loremipsum/colors.php">Skala kolorów</a>
+                        <a href="/loremipsum/color_picker.php">Kolorki</a>
                     </div>
                 </div>
             </li>
-            <li class="dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-                   aria-expanded="false">
-                    Example templates
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="/loremipsum/bootstrap_test.html">Bootstrap simple template</a>
-                    <a class="dropdown-item" href="#">Empty_1</a>
-                    <a class="dropdown-item" href="#">Empty_2</a>
+            <li>
+                <div class="nav-elem">
+                    <button class="dropbtn collapsible">Example templates</button>
+                    <div class="dropdown-content">
+                        <a href="/loremipsum/bootstrap_test.html">Bootstrap simple template</a>
+                        <a href="#">Empty_1</a>
+                        <a href="#">Empty_2</a>
+                    </div>
                 </div>
             </li>
-            <li class="dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
-                   aria-expanded="false">
-                    Simples subpages
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdown02">
-                    <a class="dropdown-item" href="/loremipsum/about.php">About</a>
-                    <a class="dropdown-item" href="/loremipsum/actions.php">Actions</a>
-                    <a class="dropdown-item" href="/loremipsum/test2.php">Test</a>
-                    <a class="dropdown-item" href="/loremipsum/php_globals.php">PHP $GLOBALS</a>
-                    <a class="dropdown-item" href="#">Empty_1</a>
-                    <a class="dropdown-item" href="#">Empty_2</a>
+            <li>
+                <div class="nav-elem">
+                    <button class="dropbtn collapsible">PHP samples</button>
+                    <div class="dropdown-content">
+                        <a href="/loremipsum/about.php">About</a>
+                        <a href="/loremipsum/actions.php">Actions</a>
+                        <a href="/loremipsum/test2.php">Test</a>
+                        <a href="/loremipsum/php_globals.php">PHP $GLOBALS</a>
+                        <a href="#">Empty_1</a>
+                        <a href="#">Empty_2</a>
+                    </div>
                 </div>
             </li>
 
@@ -81,45 +70,4 @@
 </nav>
 
 
-<div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#news">News</a>
-    <div class="dropdown">
-        <button class="dropbtn" onClick="dropdownFunction(this.id)">Dropdown
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content" id="myDropdown2">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-    </div>
-</div>
-
-
-
-<button id="1" onclick="reply_click(this.id)">B1</button>
-<button id="2" onClick="reply_click(this.id)">B2</button>
-<button id="3" onClick="reply_click(this.id)">B3</button>
-<button id="4" onClick="reply_click2()">B4</button>
-
-<script type="text/javascript">
-    function reply_click(clicked_id)
-    {
-        alert(clicked_id);
-    }
-
-
-    function reply_click2()
-    {
-        var idClicked = this.id;
-        alert(idClicked);
-    }
-
-    function dropdownFunction(elemtID) {
-        alert(elemtID);
-        alert(this.id);
-        document.getElementById(elemtID).classList.toggle("show");
-    }
-
-</script>
+<script src="/loremipsum/navbar/navbar.js"></script>
