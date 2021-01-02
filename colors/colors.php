@@ -3,7 +3,7 @@
 <head>
     <title>Kolorki</title>
     <meta charset="UTF-8">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../favicon.ico">
     <link rel="stylesheet" href="/loremipsum/css/bootstrap.min.css">
     <link rel="stylesheet" href="/loremipsum/css/customStyle.css">
     <script src="/loremipsum/js/jquery-3.5.1.min.js"></script>
