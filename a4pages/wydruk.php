@@ -11,7 +11,7 @@
 
 
     <style>
-        body {
+        html, body {
             background: #ccc;
         }
 
