@@ -1,0 +1,37 @@
+.container {
+    -webkit-background-size: 80px 80px;
+    -moz-background-size: 80px 80px;
+    background-size: 20px 20px;
+    background-image: -webkit-gradient(
+            linear, 0% 0%, 100% 100%,
+            color-stop(25%, rgba(0,0,0,0.02)),
+            color-stop(25%, rgba(0,0,0,0)),
+            color-stop(50%, rgba(0,0,0,0)),
+            color-stop(50%, rgba(0,0,0,0.02)),
+            color-stop(75%, rgba(0,0,0,0.02)),
+            color-stop(75%, rgba(0,0,0,0)),
+            color-stop(100%, rgba(0,0,0,0)));
+    /*background-color: rgba(200,200,200,0.9);*/
+
+}
+
+.result-box {
+    min-height: 200px;
+    min-width: 200px;
+    background-color: lightblue;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    display: inline-block;
+    border: 7px solid #aaa;
+    border-radius: 20px;
+    /*display: flex;*/
+}
+
+.center{
+    margin: auto;
+    padding: 10px;
+}
+
+#outer {
+    display: flex;
+    justify-content: center;
+}
