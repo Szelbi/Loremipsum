@@ -12,11 +12,11 @@
 
     <style>
         body {
-            background: rgb(204, 204, 204);
+            background: #ccc;
         }
 
         page {
-            background: white;
+            background: #fff;
             display: block;
             margin: 30px auto 150px;
 
