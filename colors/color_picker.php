@@ -5,8 +5,7 @@
     <title>Color picker</title>
     <link rel="stylesheet" href="/loremipsum/css/bootstrap.min.css">
     <link rel="stylesheet" href="/loremipsum/css/customStyle.css">
-
-
+    <link rel="stylesheet" href="/loremipsum/colors/color_picker.css">
 </head>
 
 <header>
@@ -16,14 +15,18 @@
 <body>
 <main class="main">
 
-    <h3>Footer test</h3>
 
-    <button type="button" id="button" onclick="myFunction()">Duplicate</button>
-
-
-    <p id="output">Lore ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda aut debitis deserunt
-        dignissimos dolore dolorum ea fuga itaque iusto libero magni nam, nostrum obcaecati, quaerat quidem quis soluta
-        unde?</p>
+    <div class="container">
+        <div class="row" style="height: 500px">
+            <div class="col-md-4 border-orange" id="outer">
+                <h4>Result</h4>
+                <div class="result-box center"></div>
+            </div>
+            <div class="col-md-8 border-orange">
+                <h4>Column 2</h4>
+            </div>
+        </div>
+    </div>
 </main>
 </body>
 
