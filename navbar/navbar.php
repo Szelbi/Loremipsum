@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="/loremipsum/css/bootstrap.min.css">
-<script src="/loremipsum/js/jquery-3.5.1.min.js"></script>
 <script src="/loremipsum/navbar/navbar.js"></script>
 <link rel="stylesheet" href="/loremipsum/navbar/navbar.css">
 
