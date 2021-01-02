@@ -1,12 +1,13 @@
 html, body {
 	height: 100%;
+	background-image: linear-gradient(0.25turn, #ddd, #fff, #ddd);
 }
 body {
 	font-family: Tahoma, "Courier New", Courier, monospace;
 	color: #777;
 	display: flex; /*Uzyte do organizacji footera*/
 	flex-direction: column; /*Uzyte do organizacji footera*/
-	background-image: linear-gradient(#fff, #eee);
+	/*background-image: linear-gradient(#fff, #eee);*/
 }
 
 h1, h2, h3, h4, h5 {
