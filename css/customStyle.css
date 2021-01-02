@@ -7,6 +7,11 @@ body {
 	display: flex; /*Uzyte do organizacji footera*/
 	flex-direction: column; /*Uzyte do organizacji footera*/
 }
+
+h1, h2, h3, h4, h5 {
+	text-align: center;
+}
+
 .main{
 	padding-top: 80px;
 	padding-bottom: 80px;
