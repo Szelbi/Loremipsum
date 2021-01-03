@@ -51,7 +51,3 @@ for (i = 0; i < coll.length; i++) {
     });
 }
 
-
-$('#menucontainer').click(function(event){
-    event.stopPropagation();
-});
