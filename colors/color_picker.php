@@ -24,6 +24,9 @@
             </div>
             <div class="col-md-8 border-orange">
                 <h4>Column 2</h4>
+                <div class="slider">1</div>
+                <div class="slider">2</div>
+                <div class="slider">3</div>
             </div>
         </div>
     </div>
