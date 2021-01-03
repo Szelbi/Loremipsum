@@ -110,4 +110,7 @@
     font-size: 14px;
 }
 
+.result:focus {
+    outline: none;
+}
 
