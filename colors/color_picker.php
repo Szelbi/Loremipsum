@@ -45,6 +45,8 @@
                 </div>
                 <p id="wynik">HSLA: </p>
 
+                <input type="range" id="slider" min="0" max="100" value="100" step="10" oninput="outputUpdate(value)" aria-label="Selecteer Range">
+                <input type="text" id="range" aria-label="range">
             </div>
         </div>
     </div>
