@@ -6,12 +6,9 @@
     <link rel="stylesheet" href="/loremipsum/css/bootstrap.min.css">
     <link rel="stylesheet" href="/loremipsum/css/customStyle.css">
 
+    <style>
 
-    <script>
-        function myFunction() {
-            document.getElementById("output").innerHTML += document.getElementById("output").innerHTML;
-        }
-    </script>
+    </style>
 
 
 </head>
@@ -21,20 +18,17 @@
 </header>
 
 <body>
-<!--<main class="main ">-->
 <main class="main border-orange">
 
-    <h3>Footer test</h3>
+    <h1>Custom Range Slider</h1>
 
-    <button type="button" id="button" onclick="myFunction()">Duplicate</button>
-
-
-    <p id="output">Lore ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda aut debitis deserunt
-        dignissimos dolore dolorum ea fuga itaque iusto libero magni nam, nostrum obcaecati, quaerat quidem quis soluta
-        unde?</p>
+    <div class="slidecontainer">
+        <div>
+            <input type="range" class="slider" id="hsl-h" min="1" max="360" value="180"  aria-label="hue" >
+            <input type="text" class="result" id="hsl-h-result" aria-label="hue">
+        </div>
+    </div>
 </main>
-<!--</main>-->
-
 </body>
 
 <footer>
