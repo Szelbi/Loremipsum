@@ -86,7 +86,15 @@ for (var i = 0; i < sliders.length; i++) {
 
 
 
-// function outputUpdate(vol) {
-//     document.querySelector('#hsl-s-result').value = (vol);
-//     // alert(-(vol - 100));
-// }
+function outputUpdate(vol) {
+    document.querySelector('#hsl-s-result').value = (vol);
+    document.querySelector('#range').value = -(vol - 100);
+    // alert(-(vol - 100));
+}
+
+/*
+TODO
+Trzeba zrobić żeby wartości aktualizowały się automatycznie.
+Przypisać jakoś funkcję  myFunction do akcji oninput, która działa na razie tylko dla poszczególnych elementów
+Trzeba przypisać funkcję do wszystkich elementów
+ */
