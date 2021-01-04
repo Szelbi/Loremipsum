@@ -76,12 +76,12 @@ myFunction = function() {
 
 var sliders = document.getElementsByClassName("slider");
 
-for (var i = 0; i < sliders.length; i++) {
-    sliders[i].addEventListener('click', myFunction);
-}
+// for (var i = 0; i < sliders.length; i++) {
+//     sliders[i].addEventListener('click', myFunction);
+// }
 
 for (var i = 0; i < sliders.length; i++) {
-    sliders[i].addEventListener('onmousemove', myFunction);
+    sliders[i].addEventListener('input', myFunction);
 }
 
 
