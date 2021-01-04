@@ -1,32 +1,22 @@
-.container {
-    -webkit-background-size: 80px 80px;
-    -moz-background-size: 80px 80px;
-    background-size: 20px 20px;
-    background-image: -webkit-gradient(
-            linear, 0% 0%, 100% 100%,
-            color-stop(25%, rgba(0,0,0,0.02)),
-            color-stop(25%, rgba(0,0,0,0)),
-            color-stop(50%, rgba(0,0,0,0)),
-            color-stop(50%, rgba(0,0,0,0.02)),
-            color-stop(75%, rgba(0,0,0,0.02)),
-            color-stop(75%, rgba(0,0,0,0)),
-            color-stop(100%, rgba(0,0,0,0)));
-    /*background-color: rgba(200,200,200,0.9);*/
-
-}
-
 .result-box {
     min-height: 200px;
     min-width: 200px;
-    background-color: lightblue;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+    /*background-color: #ccc;*/
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     display: inline-block;
     border: 7px solid #666;
     border-radius: 16px;
     /*display: flex;*/
 }
 
-.center{
+#main-box {
+    background-size: cover;
+    background-color: #fff;
+    /*background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../img/alpha.png);*/
+}
+
+.center {
     margin: auto;
     padding: 10px;
 }
@@ -40,7 +30,6 @@
     overflow: hidden;
 
 }
-
 
 .picker {
     margin: 25px 0;
@@ -58,10 +47,10 @@
 .slider {
     height: 32px;
     min-width: 600px;
-    /*padding: 2px;*/
+    padding: 0;
     font-size: 14px;
-    border: 5px solid #666;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border: 3px solid #666;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     display: inline;
     -webkit-appearance: none;
@@ -98,13 +87,13 @@
 }
 
 .result {
-    width: 60px;
+    width: 50px;
     float: right;
     display: inline;
-    border: 5px solid #666;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    border-radius: 16px;
-    text-align: center;
+    border: 3px solid #666;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: right;
     background-color: #999;
     color: #666;
     font-weight: bold;
