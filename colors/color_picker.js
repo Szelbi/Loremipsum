@@ -1,8 +1,8 @@
 /**
  * Hue
  */
-var slider_h = document.getElementById("hsl-h");
-var result_h = document.getElementById("hsl-h-result");
+let slider_h = document.getElementById("hsl-h");
+let result_h = document.getElementById("hsl-h-result");
 result_h.value = slider_h.value;
 
 slider_h.oninput = function() {
@@ -17,8 +17,8 @@ result_h.oninput = function() {
 /**
  * Saturation
  */
-var slider_s = document.getElementById("hsl-s");
-var result_s = document.getElementById("hsl-s-result");
+let slider_s = document.getElementById("hsl-s");
+let result_s = document.getElementById("hsl-s-result");
 result_s.value = slider_s.value;
 
 slider_s.oninput = function() {
@@ -32,8 +32,8 @@ result_s.oninput = function() {
 /**
  * Lightness
  */
-var slider_l = document.getElementById("hsl-l");
-var result_l = document.getElementById("hsl-l-result");
+let slider_l = document.getElementById("hsl-l");
+let result_l = document.getElementById("hsl-l-result");
 result_l.value = slider_l.value;
 
 slider_l.oninput = function() {
@@ -47,8 +47,8 @@ result_l.oninput = function() {
 /**
  * Alpha
  */
-var slider_a = document.getElementById("hsl-a");
-var result_a = document.getElementById("hsl-a-result");
+let slider_a = document.getElementById("hsl-a");
+let result_a = document.getElementById("hsl-a-result");
 result_a.value = slider_a.value;
 
 slider_a.oninput = function() {
@@ -65,22 +65,21 @@ result_a.oninput = function() {
 
 myFunction = function() {
 
-    var hue = slider_h.value;
-    var sat = slider_s.value;
-    var lig = slider_l.value;
-    var alpha = slider_a.value;
+    let hue = slider_h.value;
+    let sat = slider_s.value;
+    let lig = slider_l.value;
+    let alpha = slider_a.value;
     let results = "hsla(" + hue + ", " + sat + '%, ' + lig + '%, ' + alpha +")";
     wynik.textContent = results;
     document.getElementById("box").style.backgroundColor = results;
 }
 
-var sliders = document.getElementsByClassName("slider");
+let sliders = document.getElementsByClassName("slider");
+for (let i = 0; i < sliders.length; i++) {
+    sliders[i].addEventListener('click', myFunction);
+}
 
-// for (var i = 0; i < sliders.length; i++) {
-//     sliders[i].addEventListener('click', myFunction);
-// }
-
-for (var i = 0; i < sliders.length; i++) {
+for (let i = 0; i < sliders.length; i++) {
     sliders[i].addEventListener('input', myFunction);
 }
 
@@ -91,10 +90,3 @@ function outputUpdate(vol) {
     document.querySelector('#range').value = -(vol - 100);
     // alert(-(vol - 100));
 }
-
-/*
-TODO
-Trzeba zrobić żeby wartości aktualizowały się automatycznie.
-Przypisać jakoś funkcję  myFunction do akcji oninput, która działa na razie tylko dla poszczególnych elementów
-Trzeba przypisać funkcję do wszystkich elementów
- */
