@@ -16,21 +16,21 @@
 <main class="main">
 
 
-    <div class="container">
-        <div class="row" style="height: 500px; background-color: #ddd">
-            <div class="col-md-4 border-orange" id="outer">
-                <div class="result-box center" id="box"></div>
+    <div class="container border-orange">
+        <div class="row" style="height: 400px;">
+            <div class="col-md-4 " id="outer">
+                <div class="result-box center" id="main-box"></div>
             </div>
-            <div class="col-md-8 border-orange">
+            <div class="col-md-8 ">
                 <h4>Sliders</h4>
                 <div class="picker">
                     <p class="label" title="Hue">H</p>
-                    <input type="range" class="slider" id="hsl-h" min="0" max="360" value="180" aria-label="hue" oninput="myFunction()">
+                    <input type="range" class="slider" id="hsl-h" min="0" max="360" value="180" aria-label="hue">
                     <input type="text" class="result" id="hsl-h-result" aria-label="hue">
                 </div>
                 <p class="label" title="Saturation">S</p>
                 <div class="picker">
-                    <input type="range" class="slider" id="hsl-s" min="0" max="100" value="100" aria-label="hue" oninput="outputUpdate(value)">
+                    <input type="range" class="slider" id="hsl-s" min="0" max="100" value="100" aria-label="hue">
                     <input type="text" class="result" id="hsl-s-result" aria-label="saturation">
                 </div>
                 <div class="picker">
@@ -43,10 +43,7 @@
                     <input type="range" class="slider" id="hsl-a" min="0" max="1" value="1" step="0.01" aria-label="hue">
                     <input type="text" class="result" id="hsl-a-result" aria-label="alpha">
                 </div>
-                <p id="wynik">HSLA: </p>
-
-                <input type="range" id="slider" min="0" max="100" value="100" step="10" oninput="outputUpdate(value)" aria-label="Selecteer Range">
-                <input type="text" id="range" aria-label="range">
+                <p id="wynik">hsla(180, 100%, 50%, 1)</p>
             </div>
         </div>
     </div>
