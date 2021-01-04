@@ -11,9 +11,20 @@
 }
 
 #main-box {
-    background-size: cover;
+    /*background-size: cover;*/
     background-color: #fff;
     /*background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../img/alpha.png);*/
+
+    /*background-color: #eee;*/
+
+    /**
+     TODO
+     Szachownica. Do przemyślenia czy lepiej używać tla generowanego z css czy z obrazka alpha.png.
+     */
+    /*background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),*/
+    /*linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);*/
+    /*background-size: 60px 60px;*/
+    /*background-position: 0 0, 30px 30px;*/
 }
 
 .center {
