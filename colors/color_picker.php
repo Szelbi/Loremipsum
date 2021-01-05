@@ -17,7 +17,7 @@
 
 
     <div class="container border-orange">
-        <div class="row" style="height: 400px;">
+        <div class="row" style="height: 360px;">
             <div class="col-md-4 " id="outer">
                 <div class="result-box center" id="main-box"></div>
             </div>
@@ -28,8 +28,8 @@
                     <input type="range" class="slider" id="hsl-h" min="0" max="360" value="180" aria-label="hue">
                     <input type="text" class="result" id="hsl-h-result" aria-label="hue">
                 </div>
-                <p class="label" title="Saturation">S</p>
                 <div class="picker">
+                    <p class="label" title="Saturation">S</p>
                     <input type="range" class="slider" id="hsl-s" min="0" max="100" value="100" aria-label="hue">
                     <input type="text" class="result" id="hsl-s-result" aria-label="saturation">
                 </div>
