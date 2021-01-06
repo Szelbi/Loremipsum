@@ -1,80 +1,62 @@
-/**
- * Hue
- */
-let slider_h = document.getElementById("hsl-h");
-let result_h = document.getElementById("hsl-h-result");
-result_h.value = slider_h.value;
-
-slider_h.oninput = function () {
-    result_h.value = slider_h.value;
-}
-result_h.oninput = function () {
-    slider_h.value = result_h.value;
-}
 
 
 /**
- * Saturation
+ * Pobieranie wartości HSLA na podstawie podanego id slidera
  */
-let slider_s = document.getElementById("hsl-s");
-let result_s = document.getElementById("hsl-s-result");
-result_s.value = slider_s.value;
+getColorValue = function(sliderId) {
 
-slider_s.oninput = function () {
-    result_s.value = slider_s.value;
-}
-result_s.oninput = function () {
-    slider_s.value = result_s.value;
+    let slider = document.getElementById(sliderId);
+    let result = document.getElementById(sliderId + "-result");
+
+    let value = slider.value;
+    result.value  = value;
+
+    slider.oninput = function () {
+        result.value = slider.value;
+    }
+    result.oninput = function () {
+        slider.value = result.value;
+    }
+    console.log(value);
+
+    return value;
 }
 
 
 /**
- * Lightness
+ * Obiekt 'hsla'. Zawiera wartości składowych HSLA
+ * @type {{saturation: (*|string), lightness: (*|string), alpha: (*|string), hue: (*|string)}}
  */
-let slider_l = document.getElementById("hsl-l");
-let result_l = document.getElementById("hsl-l-result");
-result_l.value = slider_l.value;
-
-slider_l.oninput = function () {
-    result_l.value = slider_l.value;
-}
-result_l.oninput = function () {
-    slider_l.value = result_l.value;
+let hsla = {
+    hue: getColorValue("hsl-h"),
+    saturation: getColorValue("hsl-s"),
+    lightness: getColorValue("hsl-l"),
+    alpha: getColorValue("hsl-a")
 }
 
-
-/**
- * Alpha
- */
-let slider_a = document.getElementById("hsl-a");
-let result_a = document.getElementById("hsl-a-result");
-result_a.value = slider_a.value;
-
-slider_a.oninput = function () {
-    result_a.value = slider_a.value;
-}
-result_a.oninput = function () {
-    slider_a.value = result_a.value;
-}
-
-
-colorMainBox = function () {
-    let hue = slider_h.value;
-    let sat = slider_s.value;
-    let lig = slider_l.value;
-    let alpha = slider_a.value;
-    let results = "hsla(" + hue + ", " + sat + '%, ' + lig + '%, ' + alpha + ")";
-    wynik.textContent = results; // Wartość dla <p> z wynikiem pod sliderami
-    document.getElementById("main-box").style.backgroundColor = results; // Kolor dla boxa głównego
-}
 
 /**
  * range slidery .slider
  */
 let sliders = document.getElementsByClassName("slider");
 for (let i = 0; i < sliders.length; i++) {
-    sliders[i].addEventListener('input', colorMainBox);
+    sliders[i].addEventListener('input', () => getColorValue(sliders[i].id));
+    console.log(sliders[i].id);
 }
+
+console.log(hsla);
+
+
+
+setColor = function () {
+    let results = "hsla(" + hsla.hue + ", " + hsla.saturation + '%, ' + hsla.lightness + '%, ' + hsla.alpha + ")";
+
+    let wynik = document.getElementById("wynik");
+    wynik.textContent = results; // Wartość dla <p> z wynikiem pod sliderami
+    document.getElementById("main-box").style.backgroundColor = results; // Kolor dla boxa głównego
+}
+
+setColor();
 
 
 /**
@@ -87,10 +69,30 @@ for (let i = 0; i < results.length; i++) {
     results[i].addEventListener('click', function () {
         this.select();
     })
-
+//
     // Dodaję funkcję colorMainBox przy wprowadzaniu wartości ręcznie do pola input
-    results[i].addEventListener('input', colorMainBox)
+    results[i].addEventListener('input', setColor)
+}
+
+
+
+
+/**
+ *  Ustawia background slidera Hue na całą paletę HSL
+ *  Robię to w JS żeby dynamicznie wygenerować paletę zamiast pisać długiego CSS z ~12 kolorami
+ */
+setHueBgColor = function() {
+
+    let colors = [];
+    for(let i=0 ; i<=360; i+=10){
+        let color = 'hsla(' + i +', 100%, 50%, 1)';
+        colors.push(color);
+    }
+
+    let hslh = document.getElementById('hsl-h');
+    hslh.style.background = 'linear-gradient(90deg, ' + colors + ')';
 
 }
+setHueBgColor();
 
 
