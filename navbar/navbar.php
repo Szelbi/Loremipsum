@@ -41,7 +41,6 @@
                     <div class="dropdown-content">
                         <a href="/loremipsum/bootstrap_test.html">Bootstrap simple template</a>
                         <a href="#">Empty_1</a>
-                        <a href="#">Empty_2</a>
                     </div>
                 </div>
             </li>
@@ -54,7 +53,6 @@
                         <a href="/loremipsum/test2.php">Test</a>
                         <a href="/loremipsum/php_globals.php">PHP $GLOBALS</a>
                         <a href="#">Empty_1</a>
-                        <a href="#">Empty_2</a>
                     </div>
                 </div>
             </li>
