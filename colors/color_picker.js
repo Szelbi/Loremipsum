@@ -32,9 +32,6 @@ getSliderValue = function (sliderId) {
     slider.oninput = function () {
         result.value = slider.value;
     }
-    // result.oninput = function () {
-    //     slider.value = result.value;
-    // }
 
     return value;
 }
@@ -46,11 +43,8 @@ getResultValue = function (sliderId) {
     let result = document.getElementById(sliderId + "-result");
 
     let value = result.value;
-    //result.value  = value;
+    slider.value = value;
 
-    // slider.oninput = function () {
-    //     result.value = slider.value;
-    // }
     result.oninput = function () {
         slider.value = value;
     }
@@ -82,7 +76,6 @@ class hsla {
         this.saturation = callback("hsl-s");
         this.lightness = callback("hsl-l");
         this.alpha = callback("hsl-a");
-        console.log(this.hue);
     }
 }
 
@@ -93,7 +86,7 @@ class hsla {
  */
 setBoxColor = function (obj) {
     let results = `hsla(${obj.hue}, ${obj.saturation}%,  ${obj.lightness}%,  ${obj.alpha})`;
-    console.log(results);
+    // console.log(results);
     let wynik = document.getElementById("wynik");
     wynik.textContent = results; // Wartość dla <p> z wynikiem pod sliderami
     document.getElementById("main-box").style.backgroundColor = results; // Kolor dla boxa głównego
@@ -139,3 +132,8 @@ for (let i = 0; i < results.length; i++) {
 
 
 
+/*
+TODO
+Jest jakiś problem podczas wpisywania result z ręki. Może % się gdzieś przekazuje?
+Dodać walidację pól result
+ */
