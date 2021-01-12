@@ -1,4 +1,13 @@
 /**
+ * Funkcja do sprawdzania czy wartość jest liczbą
+ */
+function IsNumeric(val) {
+    console.log(Number(parseFloat(val)));
+    // return Number(parseFloat(val)) == val;
+    return isFinite(val);
+}
+
+/**
  * Zmieniam przecinek na kropnę w inpucie hsl-a-result
  */
 document.getElementById('hsl-a-result').addEventListener('input', function() {
@@ -10,16 +19,32 @@ document.getElementById('hsl-a-result').addEventListener('input', function() {
 
 inputFilter = function(object, event){
 
+
+    if(!(/[0-9]/.test(event.key)))
+        event.preventDefault();
+
+
     let val = object.value;
-    let id = object.id;
 
-    console.log(val);
-    // console.log(id);
-    console.log(object);
-    console.log(event.data);
-    // console.log(event.key);
+    // if(val > 10)
+    //     event.preventDefault();
+
+    console.log(object.value);
 
 
+
+    // if(event.key === 0 || event.key === '0')
+    //     return false;
+    //
+    // if(event.key === 'a') {
+    //     console.log('aaaaa');
+    //     return false;
+    // }
+
+    // object.value = object.value.replace(/\D/g, "");
+
+
+    // object.value = oldVal.replace(//)
 
     // if(elemId === "hsl-h-result")
     //     console.log(elemId);
@@ -33,38 +58,6 @@ inputFilter = function(object, event){
     //     return '';
 
 }
-
-document.getElementById('hsl-s-result').addEventListener('input', function(e) {
-    inputFilter(this, e)
-    // console.log(e);
-    // console.log(this.value);
-}
-);
-
-
-
-let input = document.getElementById('hsl-l-result');
-input.addEventListener('keyup', function (event) {
-    console.log(event.which);
-    if (event.which !== 8 && event.which !== 0 && event.which < 48 || event.which > 57) {
-        console.log(event);
-        this.value = this.value.replace(/\D/g, "");
-        // return false;
-    }
-});
-
-// document.getElementById("hsl-h-result").addEventListener('input', function () {
-//         console.log(1);
-//     })
-
-
-// let results1 = document.getElementsByClassName("result");
-// for (let i = 0; i < results1.length; i++) {
-//     results1[i].addEventListener('input', () => {
-//         inputFilter(results1[i].id)
-//     });
-// }
-
 
 
 // Restricts input for the given textbox to the given inputFilter.
@@ -220,6 +213,7 @@ for (let i = 0; i < sliders.length; i++) {
 }
 
 
+
 /**
  * inputy .result
  */
@@ -231,16 +225,16 @@ for (let i = 0; i < results.length; i++) {
         this.select();
     })
 
-    // results[i].addEventListener('keypress', () => {
-        // inputFilter(results[i].id)
-    // });
+    // Dodaję walidację wartości
+    results[i].addEventListener('keypress', function (e) {
+        inputFilter(this, e)
+    })
 
     // Dodaję funkcję colorMainBox przy wprowadzaniu wartości ręcznie do pola input
     results[i].addEventListener('input', () => {
         obj.update(getResultValue);
         setBoxColor(obj)
     });
-    // Dodaję funkcję colorMainBox przy wprowadzaniu wartości ręcznie do pola input
 
 }
 
@@ -248,7 +242,7 @@ for (let i = 0; i < results.length; i++) {
 
 /*
 TODO
-Dodać walidację pól result
+Dodać ograniczenia do wprowadzania tylko wartości z określonego zakresu (np max 100)
  */
 
 
