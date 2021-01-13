@@ -7,6 +7,7 @@ function IsNumeric(val) {
     return isFinite(val);
 }
 
+
 /**
  * Zmieniam przecinek na kropnę w inpucie hsl-a-result
  */
@@ -27,12 +28,33 @@ allowNumbers = function (object, event) {
         event.preventDefault();
 
     let val = object.value;
+}
 
-    // if(val > 10)
-    //     event.preventDefault();
+/**
+ * Ustawiam maksymalny zakres możliwych do wprowadzenia wartości.
+ * Rozpatruję tylko przypadki dodatnie, ponieważ wcześniej już blokuję
+ * możliwość wpisania znaku minus (-)
+ * @param obj
+ * @param e
+ * @param rangeId
+ */
+setInputRange = function (obj, e, rangeId) {
 
-    console.log(object.value);
+    // łączę aktualną (starą) wartość z inputa z nową wartością którą wprowadza użytkownik z eventa
+    let newValue = parseFloat(obj.value + e.key);
 
+    // pobieram informację, która wartość jest sprawdzana
+    let part = rangeId.split("-")[1];
+
+    if (['s', 'l'].includes(part) && newValue > 100){
+        e.preventDefault();
+    }
+    if (['h'].includes(part) && newValue > 360){
+        e.preventDefault();
+    }
+    if (['a'].includes(part) && newValue > 1){
+        e.preventDefault();
+    }
 }
 
 
@@ -150,12 +172,14 @@ for (let i = 0; i < results.length; i++) {
 
     // Do wszystkich inputów result dodaję funkcję z automatycznym zaznaczaniem tekstu po kliknięciu
     results[i].addEventListener('click', function () {
-        this.select();
+        // this.select();
+        this.value= null;
     })
 
     // Dodaję walidację wartości
     results[i].addEventListener('keypress', function (e) {
         allowNumbers(this, e);
+        setInputRange(this, e, results[i].id)
     })
 
     // Dodaję funkcję colorMainBox przy wprowadzaniu wartości ręcznie do pola input
@@ -163,13 +187,10 @@ for (let i = 0; i < results.length; i++) {
         obj.update(getResultValue);
         setBoxColor(obj)
     });
-
 }
 
 
+
 /*
-TODO
-Dodać ograniczenia do wprowadzania tylko wartości z określonego zakresu (np max 100)
+TODO Dodać zmianę kolorków na sliderach
  */
-
-
