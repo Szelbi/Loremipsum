@@ -46,13 +46,13 @@ setInputRange = function (obj, e, rangeId) {
     // pobieram informację, która wartość jest sprawdzana
     let part = rangeId.split("-")[1];
 
-    if (['s', 'l'].includes(part) && newValue > 100){
+    if (['s', 'l'].includes(part) && newValue > 100) {
         e.preventDefault();
     }
-    if (['h'].includes(part) && newValue > 360){
+    if (['h'].includes(part) && newValue > 360) {
         e.preventDefault();
     }
-    if (['a'].includes(part) && newValue > 1){
+    if (['a'].includes(part) && newValue > 1) {
         e.preventDefault();
     }
 }
@@ -173,7 +173,7 @@ for (let i = 0; i < results.length; i++) {
     // Do wszystkich inputów result dodaję funkcję z automatycznym zaznaczaniem tekstu po kliknięciu
     results[i].addEventListener('click', function () {
         // this.select();
-        this.value= null;
+        this.value = null;
     })
 
     // Dodaję walidację wartości
@@ -188,7 +188,6 @@ for (let i = 0; i < results.length; i++) {
         setBoxColor(obj)
     });
 }
-
 
 
 /*
