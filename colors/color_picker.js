@@ -10,19 +10,21 @@ function IsNumeric(val) {
 /**
  * Zmieniam przecinek na kropnę w inpucie hsl-a-result
  */
-document.getElementById('hsl-a-result').addEventListener('input', function() {
-    this.value = this.value.replace(/,/g, '.')
+document.getElementById('hsl-a-result').addEventListener('input', function () {
+        this.value = this.value.replace(/,/g, '.')
     }
 );
 
 
+/**
+ * Dozwolone tylko cyfry oraz kropka i przecinek w przypadku inputa dla Alphy
+ * @param object
+ * @param event
+ */
+inputFilter = function (object, event) {
 
-inputFilter = function(object, event){
-
-
-    if(!(/[0-9]/.test(event.key)))
+    if (!(/[0-9,.]/.test(event.key)))
         event.preventDefault();
-
 
     let val = object.value;
 
@@ -31,70 +33,7 @@ inputFilter = function(object, event){
 
     console.log(object.value);
 
-
-
-    // if(event.key === 0 || event.key === '0')
-    //     return false;
-    //
-    // if(event.key === 'a') {
-    //     console.log('aaaaa');
-    //     return false;
-    // }
-
-    // object.value = object.value.replace(/\D/g, "");
-
-
-    // object.value = oldVal.replace(//)
-
-    // if(elemId === "hsl-h-result")
-    //     console.log(elemId);
-    //
-    // if(elemId === "hsl-a-result")
-    //     console.log("a");
-
-    // let val = document.getElementById(elemId).value;
-    // console.log(val);
-    // if (val > 1000)
-    //     return '';
-
 }
-
-
-// Restricts input for the given textbox to the given inputFilter.
-// function setInputFilter(textbox, inputFilter) {
-//     ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function(event) {
-//         textbox.addEventListener(event, function() {
-//             if (inputFilter(this.value)) {
-//                 this.oldValue = this.value;
-//                 this.oldSelectionStart = this.selectionStart;
-//                 this.oldSelectionEnd = this.selectionEnd;
-//             } else if (this.hasOwnProperty("oldValue")) {
-//                 this.value = this.oldValue;
-//                 this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
-//             } else {
-//                 this.value = "";
-//             }
-//         });
-//     });
-// }
-
-// Install input filters.
-// setInputFilter(document.getElementById("hsl-h-result"), function(value) {
-//     return /^-?\d*$/.test(value); });
-// setInputFilter(document.getElementById("uintTextBox"), function(value) {
-//     return /^\d*$/.test(value); });
-// setInputFilter(document.getElementById("intLimitTextBox"), function(value) {
-//     return /^\d*$/.test(value) && (value === "" || parseInt(value) <= 500); });
-// setInputFilter(document.getElementById("floatTextBox"), function(value) {
-//     return /^-?\d*[.,]?\d*$/.test(value); });
-// setInputFilter(document.getElementById("currencyTextBox"), function(value) {
-//     return /^-?\d*[.,]?\d{0,2}$/.test(value); });
-// setInputFilter(document.getElementById("latinTextBox"), function(value) {
-//     return /^[a-z]*$/i.test(value); });
-// setInputFilter(document.getElementById("hexTextBox"), function(value) {
-//     return /^[0-9a-f]*$/i.test(value); });
-
-
 
 
 /**
@@ -109,12 +48,10 @@ setHueBgColor = function () {
         colors.push(color);
     }
 
-    let hslh = document.getElementById('hsl-h');
-    hslh.style.background = 'linear-gradient(90deg, ' + colors + ')';
+    let hsla = document.getElementById('hsl-h');
+    hsla.style.background = 'linear-gradient(90deg, ' + colors + ')';
 }
 setHueBgColor();
-
-
 
 
 /**
@@ -199,8 +136,6 @@ obj.update(getResultValue);
 setBoxColor(obj);
 
 
-
-
 /**
  * range slidery .slider
  */
@@ -211,7 +146,6 @@ for (let i = 0; i < sliders.length; i++) {
         setBoxColor(obj)
     });
 }
-
 
 
 /**
@@ -227,7 +161,7 @@ for (let i = 0; i < results.length; i++) {
 
     // Dodaję walidację wartości
     results[i].addEventListener('keypress', function (e) {
-        inputFilter(this, e)
+        inputFilter(this, e);
     })
 
     // Dodaję funkcję colorMainBox przy wprowadzaniu wartości ręcznie do pola input
@@ -237,7 +171,6 @@ for (let i = 0; i < results.length; i++) {
     });
 
 }
-
 
 
 /*
