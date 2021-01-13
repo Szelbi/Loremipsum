@@ -65,10 +65,6 @@ getSliderValue = function (sliderId) {
     let value = slider.value;
     result.value = value;
 
-    slider.oninput = function () {
-        result.value = slider.value;
-    }
-
     return value;
 }
 
@@ -80,10 +76,6 @@ getResultValue = function (sliderId) {
 
     let value = result.value;
     slider.value = value;
-
-    result.oninput = function () {
-        slider.value = value;
-    }
 
     return value;
 }
