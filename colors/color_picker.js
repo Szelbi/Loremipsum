@@ -68,7 +68,9 @@ getSliderValue = function (sliderId) {
     return value;
 }
 
-
+/**
+ * Pobieranie wartości HSLA na podstawie podanego id resulta
+ */
 getResultValue = function (sliderId) {
 
     let slider = document.getElementById(sliderId);
