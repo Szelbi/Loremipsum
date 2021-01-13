@@ -192,5 +192,7 @@ for (let i = 0; i < results.length; i++) {
 
 
 /*
-TODO Dodać zmianę kolorków na sliderach
+TODO
+- Dodać zmianę kolorków na sliderach
+- Zabronić wprowadzania przecinków w inputach innych niż Alpha
  */
