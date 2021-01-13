@@ -21,7 +21,7 @@ document.getElementById('hsl-a-result').addEventListener('input', function () {
  * @param object
  * @param event
  */
-inputFilter = function (object, event) {
+allowNumbers = function (object, event) {
 
     if (!(/[0-9,.]/.test(event.key)))
         event.preventDefault();
@@ -131,7 +131,7 @@ setBoxColor(obj);
 
 
 /**
- * range slidery .slider
+ * slidery .slider
  */
 let sliders = document.getElementsByClassName("slider");
 for (let i = 0; i < sliders.length; i++) {
@@ -155,7 +155,7 @@ for (let i = 0; i < results.length; i++) {
 
     // Dodaję walidację wartości
     results[i].addEventListener('keypress', function (e) {
-        inputFilter(this, e);
+        allowNumbers(this, e);
     })
 
     // Dodaję funkcję colorMainBox przy wprowadzaniu wartości ręcznie do pola input
