@@ -43,6 +43,7 @@
                     <input type="range" class="slider" id="hsl-a" min="0" max="1" value="1" step="0.01" aria-label="hue">
                     <input type="text" class="result" id="hsl-a-result" aria-label="alpha">
                 </div>
+                <p id="wynik"></p>
             </div>
         </div>
     </div>
