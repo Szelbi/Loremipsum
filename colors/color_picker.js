@@ -58,23 +58,6 @@ setInputRange = function (obj, e, rangeId) {
 }
 
 
-/**
- *  Ustawia background slidera Hue na całą paletę HSL
- *  Robię to w JS żeby dynamicznie wygenerować paletę zamiast pisać długiego CSS z ~12 kolorami
- */
-setHueBgColor = function () {
-
-    let colors = [];
-    for (let i = 0; i <= 360; i += 10) {
-        let color = 'hsla(' + i + ', 100%, 50%, 1)';
-        colors.push(color);
-    }
-
-    let hsla = document.getElementById('hsl-h');
-    hsla.style.background = 'linear-gradient(90deg, ' + colors + ')';
-}
-setHueBgColor();
-
 
 /**
  * Pobieranie wartości HSLA na podstawie podanego id slidera
@@ -240,34 +223,6 @@ for (let i = 0; i < results.length; i++) {
         setBoxColor(obj)
     });
 }
-
-
-
-// document.getElementById("main-box").addEventListener("click", function() {
-//     // console.log(this.style);
-//
-//     document.getElementById("hsl-s").style.background = `linear-gradient(
-//             to right,
-//             hsla(${obj.hue},0%,${obj.lightness}%,${obj.alpha}),
-//             hsla(${obj.hue},100%,${obj.lightness}%,${obj.alpha})
-//         ), url(../img/alpha.png)`;
-//
-//     document.getElementById("hsl-l").style.background = `linear-gradient(
-//             to right,
-//             hsla(${obj.hue},${obj.saturation}%,0%,${obj.alpha}),
-//             hsla(${obj.hue},${obj.saturation}%,50%,${obj.alpha}),
-//             hsla(${obj.hue},${obj.saturation}%,100%,${obj.alpha})
-//         ), url(../img/alpha.png)`;
-//
-//     document.getElementById("hsl-a").style.background = `linear-gradient(
-//             to right,
-//             transparent,
-//             hsla(${obj.hue},${obj.saturation}%,${obj.lightness}%,1)
-//         ), url(../img/alpha.png)`;
-//
-// })
-
-
 
 
 
