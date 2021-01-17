@@ -142,6 +142,58 @@ setBoxColor = function (obj) {
     let wynik = document.getElementById("wynik");
     wynik.textContent = results; // Wartość dla <p> z wynikiem pod sliderami
     document.getElementById("main-box").style.backgroundColor = results; // Kolor dla boxa głównego
+
+    updateSlidersColor();
+}
+
+
+/**
+ * Ustawianie kolorów wszystkich slidrów
+ */
+updateSlidersColor = function () {
+
+    /**
+     * Alpha slider
+     *  Ustawiam background slidera Hue na całą paletę HSL
+     *  Robię to w JS żeby dynamicznie wygenerować paletę zamiast pisać długiego CSS z ~12 kolorami
+     */
+    let colors= [];
+    for (let i = 0; i <= 360; i += 10) {
+        let color = `hsla(${i} , ${obj.saturation}%, ${obj.lightness}%, ${obj.alpha})`;
+        colors.push(color);
+    }
+    document.getElementById('hsl-h').style.background = `linear-gradient(
+            to right, ${colors})`;
+
+    /**
+     * Saturation slider
+     */
+    document.getElementById("hsl-s").style.background = `linear-gradient(
+            to right, 
+            hsla(${obj.hue},0%,${obj.lightness}%,${obj.alpha}), 
+            hsla(${obj.hue},100%,${obj.lightness}%,${obj.alpha})
+        ), url(../img/alpha.png)`;
+
+    /**
+     * Lightness slider
+     */
+    document.getElementById("hsl-l").style.background = `linear-gradient(
+            to right, 
+            hsla(${obj.hue},${obj.saturation}%,0%,${obj.alpha}), 
+            hsla(${obj.hue},${obj.saturation}%,50%,${obj.alpha}), 
+            hsla(${obj.hue},${obj.saturation}%,100%,${obj.alpha})
+        ), url(../img/alpha.png)`;
+
+
+    /**
+     * Alpha slider
+     */
+    document.getElementById("hsl-a").style.background = `linear-gradient(
+            to right, 
+            transparent, 
+            hsla(${obj.hue},${obj.saturation}%,${obj.lightness}%,1)
+        ), url(../img/alpha.png)`;
+
 }
 
 
@@ -188,6 +240,36 @@ for (let i = 0; i < results.length; i++) {
         setBoxColor(obj)
     });
 }
+
+
+
+// document.getElementById("main-box").addEventListener("click", function() {
+//     // console.log(this.style);
+//
+//     document.getElementById("hsl-s").style.background = `linear-gradient(
+//             to right,
+//             hsla(${obj.hue},0%,${obj.lightness}%,${obj.alpha}),
+//             hsla(${obj.hue},100%,${obj.lightness}%,${obj.alpha})
+//         ), url(../img/alpha.png)`;
+//
+//     document.getElementById("hsl-l").style.background = `linear-gradient(
+//             to right,
+//             hsla(${obj.hue},${obj.saturation}%,0%,${obj.alpha}),
+//             hsla(${obj.hue},${obj.saturation}%,50%,${obj.alpha}),
+//             hsla(${obj.hue},${obj.saturation}%,100%,${obj.alpha})
+//         ), url(../img/alpha.png)`;
+//
+//     document.getElementById("hsl-a").style.background = `linear-gradient(
+//             to right,
+//             transparent,
+//             hsla(${obj.hue},${obj.saturation}%,${obj.lightness}%,1)
+//         ), url(../img/alpha.png)`;
+//
+// })
+
+
+
+
 
 
 /*
