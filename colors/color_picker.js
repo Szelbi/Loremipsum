@@ -24,10 +24,26 @@ document.getElementById('hsl-a-result').addEventListener('input', function () {
  */
 allowNumbers = function (object, event) {
 
-    if (!(/[0-9,.]/.test(event.key)))
-        event.preventDefault();
 
-    let val = object.value;
+    /**
+     * Dopuszczone maksymalnie 4 znaki
+     */
+    object.value.length > 3 ? event.preventDefault() : true;
+
+    /**
+     * Jeżeli badanym elementem jest #hsl-a-result to:
+     * 1. Sprawdzam czy wprowadzany znak jest cyfrą, kropką lub przecinkiem
+     * 2. Jeżeli wprowadzany znak to przecinek lub kropka to sprawdzam czy w inpucie nie ma już wprowadzonej kropki
+     * Jeżeli warunki są spełnione to nie pozwalam wprowadzić znaku do inputa
+     *
+     * W pozostałych przypadkach (inputy inne niż alpha) pozwalam wprowadzić jedynie cyfry
+     */
+    if (object.id === 'hsl-a-result') {
+        (!(/[0-9,.]/.test(event.key)) || (/[.,]/.test(event.key) && /[.]/.test(object.value))) ? event.preventDefault() : true;
+
+    } else {
+        !(/[0-9]/.test(event.key)) ? event.preventDefault() : true;
+    }
 }
 
 /**
@@ -41,7 +57,6 @@ setInputRange = function (obj, e, rangeId) {
 
     // łączę aktualną (starą) wartość z inputa z nową wartością którą wprowadza użytkownik z eventa
     let newValue = parseFloat(obj.value + e.key);
-
 
     // pobieram informację, która wartość jest sprawdzana
     let part = rangeId.split("-")[1];
@@ -126,7 +141,6 @@ setBoxColor = function () {
 
     setSlidersColor();
 }
-
 
 
 /**
