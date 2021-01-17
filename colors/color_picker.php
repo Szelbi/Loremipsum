@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/loremipsum/css/bootstrap.min.css">
     <link rel="stylesheet" href="/loremipsum/css/customStyle.css">
     <link rel="stylesheet" href="/loremipsum/colors/color_picker.css">
+    <style id="extra-css" type="text/css"></style>
 </head>
 
 <header>

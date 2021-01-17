@@ -134,6 +134,8 @@ setBoxColor = function () {
  */
 setSlidersColor = function () {
 
+    let $hsla = `hsla(${obj.hue}, ${obj.saturation}%, ${obj.lightness}%, ${obj.alpha})`
+
     /**
      *  Hue slider
      *  Ustawiam background slidera Hue na całą paletę HSL
@@ -171,11 +173,21 @@ setSlidersColor = function () {
     /**
      * Alpha slider
      */
-    document.getElementById("hsl-a").style.backgroundImage = `linear-gradient(
+
+    let alpha = document.getElementById("hsl-a");
+    alpha.style.backgroundImage = `linear-gradient(
             to right, 
             transparent, 
             hsla(${obj.hue},${obj.saturation}%,${obj.lightness}%,1)
         ), url(../img/alpha4.png)`;
+
+    /**
+     * Modyfying -webkit-slider-thumb:hover in the #extra-css element.
+     * Need to change this in JS since I couldnt just use background:transperant in CSS because
+     * the thumb is bigger than the sliders
+     */
+    let style = document.querySelector('[id="extra-css"]');
+    style.innerHTML = `.slider::-webkit-slider-thumb:hover { background-color: ${$hsla}; }`;
 
 }
 
