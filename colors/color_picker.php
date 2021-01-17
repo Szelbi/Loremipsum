@@ -27,27 +27,27 @@
                 <div class="picker">
                     <p class="label" title="Hue">H</p>
                     <input type="range" class="slider" id="hsl-h" min="0" max="360" value="180" aria-label="hue">
-                    <input type="text" class="result" id="hsl-h-result" aria-label="hue">
+                    <input type="text" class="result gray" id="hsl-h-result" aria-label="hue">
                 </div>
                 <div class="picker">
                     <p class="label" title="Saturation">S</p>
                     <input type="range" class="slider" id="hsl-s" min="0" max="100" value="100" aria-label="hue">
-                    <input type="text" class="result" id="hsl-s-result" aria-label="saturation">
+                    <input type="text" class="result gray" id="hsl-s-result" aria-label="saturation">
                 </div>
                 <div class="picker">
                     <p class="label" title="Lightness">L</p>
                     <input type="range" class="slider" id="hsl-l" min="0" max="100" value="50" aria-label="hue">
-                    <input type="text" class="result" id="hsl-l-result" aria-label="lightness">
+                    <input type="text" class="result gray" id="hsl-l-result" aria-label="lightness">
                 </div>
                 <div class="picker">
                     <p class="label" title="Alpha">A</p>
                     <input type="range" class="slider" id="hsl-a" min="0" max="1" value="1" step="0.01" aria-label="hue">
-                    <input type="text" class="result" id="hsl-a-result" aria-label="alpha">
+                    <input type="text" class="result gray" id="hsl-a-result" aria-label="alpha">
                 </div>
                 <div class="output-panel">
-                    <input id="output-hsla" aria-label="output-hsla">
-                    <input id="output-rgba" aria-label="output-rgba">
-                    <input id="output-hex" aria-label="output-hex">
+                    <input id="output-hsla" class="gray"  aria-label="output-hsla">
+                    <input id="output-rgba" class="gray"  aria-label="output-rgba">
+                    <input id="output-hex" class="gray" aria-label="output-hex">
                 </div>
             </div>
         </div>

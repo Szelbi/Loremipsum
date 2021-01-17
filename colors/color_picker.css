@@ -14,11 +14,13 @@
 }
 
 .output-panel {
-    padding: 20px;
+    padding-top: 20px;
 }
 
 .output-panel > input {
     margin: 0 10px;
+    font-size: 14px;
+    min-width: 190px;
 }
 
 .label {
@@ -110,22 +112,27 @@
 /*    cursor: pointer;*/
 /*}*/
 
+.gray {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #bbb;
+    color: #666;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #666;
+
+}
+
+.gray:focus {
+    outline: none;
+}
 
 .result {
     width: 50px;
     float: right;
     display: inline;
-    border: 3px solid #666;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
     text-align: right;
-    background-color: #bbb;
-    color: #666;
-    font-weight: bold;
-    font-size: 14px;
 }
 
-.result:focus {
-    outline: none;
-}
+
 
