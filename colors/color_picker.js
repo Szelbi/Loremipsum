@@ -246,9 +246,8 @@ for (let i = 0; i < sliders.length; i++) {
 let results = document.getElementsByClassName("result");
 for (let i = 0; i < results.length; i++) {
 
-    // Do wszystkich inputów result dodaję funkcję z automatycznym zaznaczaniem tekstu po kliknięciu
+    // Do wszystkich inputów result dodaję funkcję z kasowaniem tekstu po kliknięciu
     results[i].addEventListener('click', function () {
-        // this.select();
         this.value = null;
     })
 
@@ -263,6 +262,18 @@ for (let i = 0; i < results.length; i++) {
         obj.update(getResultValue);
         setColors()
     });
+}
+
+/**
+ * inputy .output
+ */
+let outputs = document.getElementsByClassName("output");
+for (let i = 0; i < outputs.length; i++) {
+
+    // Do wszystkich outputów dodaję funkcję z automatycznym zaznaczaniem tekstu po kliknięciu
+    outputs[i].addEventListener('click', function () {
+        this.select();
+    })
 }
 
 
