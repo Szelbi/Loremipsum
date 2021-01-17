@@ -58,7 +58,6 @@ setInputRange = function (obj, e, rangeId) {
 }
 
 
-
 /**
  * Pobieranie wartości HSLA na podstawie podanego id slidera
  */
@@ -140,13 +139,14 @@ updateSlidersColor = function () {
      *  Ustawiam background slidera Hue na całą paletę HSL
      *  Robię to w JS żeby dynamicznie wygenerować paletę zamiast pisać długiego CSS z ~12 kolorami
      */
-    let colors= [];
+    let colors = [];
     for (let i = 0; i <= 360; i += 10) {
         let color = `hsla(${i} , ${obj.saturation}%, ${obj.lightness}%, ${obj.alpha})`;
         colors.push(color);
     }
     document.getElementById('hsl-h').style.background = `linear-gradient(
-            to right, ${colors}), url(../img/alpha.png)`;
+            to right, ${colors}
+        ), url(../img/alpha.png)`;
 
     /**
      * Saturation slider
@@ -225,11 +225,10 @@ for (let i = 0; i < results.length; i++) {
 }
 
 
-
-
 /*
 TODO
 - Poprawić sekcję wynikową na dole. Dodać możliwość łatwego kopiowania.
 - Poprawić 'rozmiar' (size) obrazka alpha4.
 - Zabronić wprowadzania przecinków w inputach innych niż Alpha
+- Przemyśleć wywoływanie funkcji w całym skrypcie. Być może niektóre funkcje powinny się zawierać w innych itp.
  */
