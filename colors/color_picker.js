@@ -146,7 +146,7 @@ updateSlidersColor = function () {
         colors.push(color);
     }
     document.getElementById('hsl-h').style.background = `linear-gradient(
-            to right, ${colors})`;
+            to right, ${colors}), url(../img/alpha.png)`;
 
     /**
      * Saturation slider
@@ -229,6 +229,7 @@ for (let i = 0; i < results.length; i++) {
 
 /*
 TODO
-- Dodać zmianę kolorków na sliderach
+- Poprawić sekcję wynikową na dole. Dodać możliwość łatwego kopiowania.
+- Poprawić 'rozmiar' (size) obrazka alpha4.
 - Zabronić wprowadzania przecinków w inputach innych niż Alpha
  */
