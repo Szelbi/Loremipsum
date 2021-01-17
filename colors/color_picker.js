@@ -279,6 +279,6 @@ for (let i = 0; i < outputs.length; i++) {
 
 /*
 TODO
-- Poprawić sekcję wynikową na dole. Dodać możliwość łatwego kopiowania.
 - Przemyśleć wywoływanie funkcji w całym skrypcie. Być może niektóre funkcje powinny się zawierać w innych itp.
+- Zastanowić się nad konwersją HSLA na RGB(A). Ewentualnie możnaby skorzystać z gotowego rozwiązania (https://stackoverflow.com/questions/2353211/hsl-to-rgb-color-conversion)
  */
