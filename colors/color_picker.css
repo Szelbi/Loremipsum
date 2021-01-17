@@ -77,9 +77,9 @@
     -webkit-transition: .2s;
     transition: opacity .2s;
 
-    /*background-size: cover;*/
+    /*Default values. Overwritten in JS.*/
     background-image: url(../img/alpha4.png);
-    background-size: 53px;
+    background-size: 100%, 55px;
 }
 
 .slider:hover {
