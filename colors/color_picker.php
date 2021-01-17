@@ -19,7 +19,7 @@
     <div class="container border-orange">
         <div class="row" style="height: 360px;">
             <div class="col-md-4 " id="outer">
-                <div class="result-box center" id="main-box"></div>
+                <div class="main-box center" id="main-box"></div>
             </div>
             <div class="col-md-8 ">
                 <h4>Sliders</h4>
@@ -43,7 +43,11 @@
                     <input type="range" class="slider" id="hsl-a" min="0" max="1" value="1" step="0.01" aria-label="hue">
                     <input type="text" class="result" id="hsl-a-result" aria-label="alpha">
                 </div>
-                <p id="wynik"></p>
+                <div id="outputs">
+                    <input id="output-hsla" class="result" aria-label="output-hsla">
+                    <input id="output-rgba" aria-label="output-rgba">
+                    <input id="output-hex" aria-label="output-hex">
+                </div>
             </div>
         </div>
     </div>
