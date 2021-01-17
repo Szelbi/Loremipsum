@@ -128,29 +128,28 @@ class hsla {
     }
 }
 
+
 /**
- * Ustawianie koloru main-boxa.
- * Dodatkowo wstawiam wartość $result do lini wyniku #output-hsla
+ * Ustawianie kolorów dla main-boxa i wszystkich sliderów
  */
-setBoxColor = function () {
+setColors = function () {
+
     let color = `hsla(${obj.hue}, ${obj.saturation}%, ${obj.lightness}%, ${obj.alpha})`;
-    // console.log(results);
-    let wynik = document.getElementById("output-hsla");
-    wynik.value = color; // Wartość dla <p> z wynikiem pod sliderami
-    document.getElementById("main-box").style.backgroundColor = color; // Kolor dla boxa głównego
 
-    setSlidersColor();
-}
+    let bg_hsla = `linear-gradient(to right, ${color}, ${color}), url(../img/alpha4.png)`;
+
+    /**
+     * Main-box color
+     */
+    document.getElementById("main-box").style.backgroundImage = bg_hsla;
+    document.getElementById("main-box").style.backgroundSize = '55px';
 
 
-/**
- * Ustawianie kolorów wszystkich slidrów
- */
-setSlidersColor = function () {
+    /**
+     * Wartość tekstowa hsla do #output-hsla
+     */
+    document.getElementById("output-hsla").value = color;
 
-    let $color = `hsla(${obj.hue}, ${obj.saturation}%, ${obj.lightness}%, ${obj.alpha})`;
-
-    let bg_hsla = `linear-gradient(to right, ${hsla}, ${hsla}), url(../img/alpha4.png`;
 
     /**
      *  Hue slider
@@ -205,8 +204,15 @@ setSlidersColor = function () {
      */
     let style = document.querySelector('[id="extra-css"]');
     // style.innerHTML = `.slider::-webkit-slider-thumb:hover { background-color: hsla(180, 100%, 50%, 1) }`;
-    style.innerHTML = `.slider::-webkit-slider-thumb:hover { background-color: ${$color} }`;
-    // style.innerHTML = `.slider::-webkit-slider-thumb:hover { background-image: ${bg_hsla}; }`;
+    style.innerHTML = `.slider::-webkit-slider-thumb { 
+                            background-size: 55px; 
+                            box-shadow: 0 0 5px rgba(0, 0, 0, 0.6), inset 0 -3px 3px ${color};
+                        }`;
+
+    style.innerHTML += `.slider::-webkit-slider-thumb:hover { 
+                            background-image: ${bg_hsla}; 
+                            background-size: 55px; 
+                        }`;
 
 }
 
@@ -215,7 +221,7 @@ setSlidersColor = function () {
 let obj = new hsla(180, 100, 50, 1);
 obj.update(getSliderValue);
 obj.update(getResultValue);
-setBoxColor();
+setColors();
 
 
 /**
@@ -225,7 +231,7 @@ let sliders = document.getElementsByClassName("slider");
 for (let i = 0; i < sliders.length; i++) {
     sliders[i].addEventListener('input', () => {
         obj.update(getSliderValue);
-        setBoxColor()
+        setColors()
     });
 }
 
@@ -251,7 +257,7 @@ for (let i = 0; i < results.length; i++) {
     // Dodaję funkcję colorMainBox przy wprowadzaniu wartości ręcznie do pola input
     results[i].addEventListener('input', () => {
         obj.update(getResultValue);
-        setBoxColor(obj)
+        setColors()
     });
 }
 
@@ -259,6 +265,5 @@ for (let i = 0; i < results.length; i++) {
 /*
 TODO
 - Poprawić sekcję wynikową na dole. Dodać możliwość łatwego kopiowania.
-- Zabronić wprowadzania przecinków w inputach innych niż Alpha
 - Przemyśleć wywoływanie funkcji w całym skrypcie. Być może niektóre funkcje powinny się zawierać w innych itp.
  */
