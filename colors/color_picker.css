@@ -18,6 +18,10 @@
     width: 100%;
 }
 
+.output-panel {
+    padding: 20px;
+}
+
 .label {
     float: left;
     font-size: 18px;
