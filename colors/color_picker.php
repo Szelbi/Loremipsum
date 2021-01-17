@@ -45,9 +45,9 @@
                     <input type="text" class="result gray" id="hsl-a-result" aria-label="alpha">
                 </div>
                 <div class="output-panel">
-                    <input id="output-hsla" class="gray"  aria-label="output-hsla">
-                    <input id="output-rgba" class="gray"  aria-label="output-rgba">
-                    <input id="output-hex" class="gray" aria-label="output-hex">
+                    <input id="output-hsla" class="output gray"  aria-label="output-hsla">
+                    <input id="output-rgba" class="output gray"  aria-label="output-rgba">
+                    <input id="output-hex" class="output gray" aria-label="output-hex">
                 </div>
             </div>
         </div>
