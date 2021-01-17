@@ -22,6 +22,10 @@
     padding: 20px;
 }
 
+.output-panel > input {
+    margin: 0 10px;
+}
+
 .label {
     float: left;
     font-size: 18px;
