@@ -134,7 +134,9 @@ setBoxColor = function () {
  */
 setSlidersColor = function () {
 
-    let $hsla = `hsla(${obj.hue}, ${obj.saturation}%, ${obj.lightness}%, ${obj.alpha})`
+    let $color = `hsla(${obj.hue}, ${obj.saturation}%, ${obj.lightness}%, ${obj.alpha})`;
+
+    let bg_hsla = `linear-gradient(to right, ${hsla}, ${hsla}), url(../img/alpha4.png`;
 
     /**
      *  Hue slider
@@ -147,7 +149,8 @@ setSlidersColor = function () {
         colors.push(color);
     }
     document.getElementById('hsl-h').style.backgroundImage = `linear-gradient(
-            to right, ${colors}
+            to right, 
+            ${colors}
         ), url(../img/alpha4.png)`;
 
     /**
@@ -173,7 +176,6 @@ setSlidersColor = function () {
     /**
      * Alpha slider
      */
-
     let alpha = document.getElementById("hsl-a");
     alpha.style.backgroundImage = `linear-gradient(
             to right, 
@@ -181,13 +183,16 @@ setSlidersColor = function () {
             hsla(${obj.hue},${obj.saturation}%,${obj.lightness}%,1)
         ), url(../img/alpha4.png)`;
 
+
     /**
      * Modyfying -webkit-slider-thumb:hover in the #extra-css element.
-     * Need to change this in JS since I couldnt just use background:transperant in CSS because
-     * the thumb is bigger than the sliders
+     * Need to change this in JS since I couldnt just use background:transperant in CSS because the thumb
+     * is bigger than the sliders
      */
     let style = document.querySelector('[id="extra-css"]');
-    style.innerHTML = `.slider::-webkit-slider-thumb:hover { background-color: ${$hsla}; }`;
+    // style.innerHTML = `.slider::-webkit-slider-thumb:hover { background-color: hsla(180, 100%, 50%, 1) }`;
+    style.innerHTML = `.slider::-webkit-slider-thumb:hover { background-color: ${$color} }`;
+    // style.innerHTML = `.slider::-webkit-slider-thumb:hover { background-image: ${bg_hsla}; }`;
 
 }
 
