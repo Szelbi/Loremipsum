@@ -1,38 +1,3 @@
-.result-box {
-    min-height: 200px;
-    min-width: 200px;
-
-    /*background-color: #ccc;*/
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    display: inline-block;
-    border: 7px solid #666;
-    border-radius: 16px;
-    /*display: flex;*/
-}
-
-#main-box {
-    /*background-size: cover;*/
-    background-color: #fff;
-    /*background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../img/alpha.png);*/
-
-    /*background-color: #eee;*/
-
-    /**
-     TODO
-     Szachownica. Do przemyślenia czy lepiej używać tla generowanego z css czy z obrazka alpha.png.
-     */
-    /*background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),*/
-    /*linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);*/
-    /*background-size: 60px 60px;*/
-    /*background-position: 0 0, 30px 30px;*/
-}
-
-#main-box:hover {
-    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.1);
-}
-
-
-
 .center {
     margin: auto;
     padding: 10px;
@@ -60,6 +25,28 @@
     padding: 0 10px;
 }
 
+.main-box {
+    min-height: 200px;
+    min-width: 200px;
+    /*background-color: #ccc;*/
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    border: 7px solid #666;
+    border-radius: 16px;
+    /*display: flex;*/
+}
+
+
+#main-box {
+    background-size: 100% 55px;
+    /*background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../img/alpha4.png);*/
+
+}
+
+#main-box:hover {
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
 
 .slider {
     height: 32px;
@@ -68,6 +55,7 @@
     font-size: 14px;
     border: 3px solid #666;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);*/
     border-radius: 16px;
     display: inline;
     -webkit-appearance: none;
@@ -89,12 +77,18 @@
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 32px;
-    height: 32px;
-    background: red;
+    width: 27px;
+    height: 27px;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
     cursor: pointer;
     border-radius: 50%;
-    border: 3px solid #666;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background: rgba(255,255,255,0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8), inset 0 5px 5px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
@@ -105,6 +99,7 @@
     border-radius: 50%;
     border: 3px solid #666;
 }
+
 
 .result {
     width: 50px;
