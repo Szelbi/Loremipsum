@@ -8,11 +8,6 @@
     justify-content: center;
 }
 
-.sliders {
-    overflow: hidden;
-
-}
-
 .picker {
     margin: 25px 0;
     width: 100%;
@@ -48,13 +43,11 @@
 #main-box {
     background-size: 100% 55px;
     /*background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../img/alpha4.png);*/
-
 }
 
 #main-box:hover {
     box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.1);
 }
-
 
 .slider {
     height: 25px;
@@ -86,34 +79,36 @@
     appearance: none;
     width: 35px;
     height: 35px;
-    background: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.9);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
     cursor: pointer;
     border-radius: 50%;
 }
 
 .slider::-webkit-slider-thumb:hover {
-    background: rgba(255,255,255,0.3);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8), inset 0 5px 5px rgba(255, 255, 255, 0.8);
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), inset 0 5px 5px rgba(255, 255, 255, 0.7);
     cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 35px;
-    height: 35px;
-    background: rgba(255,255,255,0.9);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
-    cursor: pointer;
-    border-radius: 50%;
-}
+/*Firefox here*/
 
-.slider::-moz-range-thumb:hover {
-    background: rgba(255,255,255,0.3);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8), inset 0 5px 5px rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-}
+/*.slider::-moz-range-thumb {*/
+/*    -webkit-appearance: none;*/
+/*    appearance: none;*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    background: rgba(255,255,255,0.9);*/
+/*    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);*/
+/*    cursor: pointer;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+/*.slider::-moz-range-thumb:hover {*/
+/*    background: rgba(255,255,255,0.3);*/
+/*    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8), inset 0 5px 5px rgba(255, 255, 255, 0.7);*/
+/*    cursor: pointer;*/
+/*}*/
 
 
 .result {
