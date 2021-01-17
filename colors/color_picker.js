@@ -32,8 +32,7 @@ allowNumbers = function (object, event) {
 
 /**
  * Ustawiam maksymalny zakres możliwych do wprowadzenia wartości.
- * Rozpatruję tylko przypadki dodatnie, ponieważ wcześniej już blokuję
- * możliwość wpisania znaku minus (-)
+ * Rozpatruję tylko przypadki dodatnie, ponieważ wcześniej już blokuję możliwość wpisania znaku minus (-)
  * @param obj
  * @param e
  * @param rangeId
@@ -42,6 +41,7 @@ setInputRange = function (obj, e, rangeId) {
 
     // łączę aktualną (starą) wartość z inputa z nową wartością którą wprowadza użytkownik z eventa
     let newValue = parseFloat(obj.value + e.key);
+
 
     // pobieram informację, która wartość jest sprawdzana
     let part = rangeId.split("-")[1];
@@ -115,27 +115,27 @@ class hsla {
 
 /**
  * Ustawianie koloru main-boxa.
- * Dodatkowo wstawiam wartość $result do lini wyniku #wynik
- * @param obj
+ * Dodatkowo wstawiam wartość $result do lini wyniku #output-hsla
  */
-setBoxColor = function (obj) {
-    let results = `hsla(${obj.hue}, ${obj.saturation}%,  ${obj.lightness}%,  ${obj.alpha})`;
+setBoxColor = function () {
+    let color = `hsla(${obj.hue}, ${obj.saturation}%, ${obj.lightness}%, ${obj.alpha})`;
     // console.log(results);
-    let wynik = document.getElementById("wynik");
-    wynik.textContent = results; // Wartość dla <p> z wynikiem pod sliderami
-    document.getElementById("main-box").style.backgroundColor = results; // Kolor dla boxa głównego
+    let wynik = document.getElementById("output-hsla");
+    wynik.value = color; // Wartość dla <p> z wynikiem pod sliderami
+    document.getElementById("main-box").style.backgroundColor = color; // Kolor dla boxa głównego
 
-    updateSlidersColor();
+    setSlidersColor();
 }
+
 
 
 /**
  * Ustawianie kolorów wszystkich slidrów
  */
-updateSlidersColor = function () {
+setSlidersColor = function () {
 
     /**
-     * Alpha slider
+     *  Hue slider
      *  Ustawiam background slidera Hue na całą paletę HSL
      *  Robię to w JS żeby dynamicznie wygenerować paletę zamiast pisać długiego CSS z ~12 kolorami
      */
@@ -184,7 +184,7 @@ updateSlidersColor = function () {
 let obj = new hsla(180, 100, 50, 1);
 obj.update(getSliderValue);
 obj.update(getResultValue);
-setBoxColor(obj);
+setBoxColor();
 
 
 /**
@@ -194,7 +194,7 @@ let sliders = document.getElementsByClassName("slider");
 for (let i = 0; i < sliders.length; i++) {
     sliders[i].addEventListener('input', () => {
         obj.update(getSliderValue);
-        setBoxColor(obj)
+        setBoxColor()
     });
 }
 
@@ -228,7 +228,6 @@ for (let i = 0; i < results.length; i++) {
 /*
 TODO
 - Poprawić sekcję wynikową na dole. Dodać możliwość łatwego kopiowania.
-- Poprawić 'rozmiar' (size) obrazka alpha4.
 - Zabronić wprowadzania przecinków w inputach innych niż Alpha
 - Przemyśleć wywoływanie funkcji w całym skrypcie. Być może niektóre funkcje powinny się zawierać w innych itp.
  */
