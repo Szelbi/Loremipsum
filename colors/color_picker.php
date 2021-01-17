@@ -43,8 +43,8 @@
                     <input type="range" class="slider" id="hsl-a" min="0" max="1" value="1" step="0.01" aria-label="hue">
                     <input type="text" class="result" id="hsl-a-result" aria-label="alpha">
                 </div>
-                <div id="outputs">
-                    <input id="output-hsla" class="result" aria-label="output-hsla">
+                <div class="output-panel">
+                    <input id="output-hsla" aria-label="output-hsla">
                     <input id="output-rgba" aria-label="output-rgba">
                     <input id="output-hex" aria-label="output-hex">
                 </div>
