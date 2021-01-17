@@ -144,38 +144,38 @@ updateSlidersColor = function () {
         let color = `hsla(${i} , ${obj.saturation}%, ${obj.lightness}%, ${obj.alpha})`;
         colors.push(color);
     }
-    document.getElementById('hsl-h').style.background = `linear-gradient(
+    document.getElementById('hsl-h').style.backgroundImage = `linear-gradient(
             to right, ${colors}
-        ), url(../img/alpha.png)`;
+        ), url(../img/alpha4.png)`;
 
     /**
      * Saturation slider
      */
-    document.getElementById("hsl-s").style.background = `linear-gradient(
+    document.getElementById("hsl-s").style.backgroundImage = `linear-gradient(
             to right, 
             hsla(${obj.hue},0%,${obj.lightness}%,${obj.alpha}), 
             hsla(${obj.hue},100%,${obj.lightness}%,${obj.alpha})
-        ), url(../img/alpha.png)`;
+        ), url(../img/alpha4.png)`;
 
     /**
      * Lightness slider
      */
-    document.getElementById("hsl-l").style.background = `linear-gradient(
+    document.getElementById("hsl-l").style.backgroundImage = `linear-gradient(
             to right, 
             hsla(${obj.hue},${obj.saturation}%,0%,${obj.alpha}), 
             hsla(${obj.hue},${obj.saturation}%,50%,${obj.alpha}), 
             hsla(${obj.hue},${obj.saturation}%,100%,${obj.alpha})
-        ), url(../img/alpha.png)`;
+        ), url(../img/alpha4.png)`;
 
 
     /**
      * Alpha slider
      */
-    document.getElementById("hsl-a").style.background = `linear-gradient(
+    document.getElementById("hsl-a").style.backgroundImage = `linear-gradient(
             to right, 
             transparent, 
             hsla(${obj.hue},${obj.saturation}%,${obj.lightness}%,1)
-        ), url(../img/alpha.png)`;
+        ), url(../img/alpha4.png)`;
 
 }
 
