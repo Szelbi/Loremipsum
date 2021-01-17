@@ -204,9 +204,13 @@ setColors = function () {
      */
     let style = document.querySelector('[id="extra-css"]');
     // style.innerHTML = `.slider::-webkit-slider-thumb:hover { background-color: hsla(180, 100%, 50%, 1) }`;
+
+
+    let hue_color = `hsla(${obj.hue}, 100%, 50%, 0.4)`;
+
     style.innerHTML = `.slider::-webkit-slider-thumb { 
                             background-size: 55px; 
-                            box-shadow: 0 0 5px rgba(0, 0, 0, 0.6), inset 0 -3px 3px ${color};
+                            box-shadow: 0 0 5px rgba(0, 0, 0, 0.6), inset 0 -3px 3px ${hue_color};
                         }`;
 
     style.innerHTML += `.slider::-webkit-slider-thumb:hover { 
