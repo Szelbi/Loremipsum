@@ -20,7 +20,16 @@
 .output-panel > input {
     margin: 0 10px;
     font-size: 14px;
-    min-width: 190px;
+}
+
+#output-hsla {
+    width: 210px;
+}
+#output-rgba {
+    width: 180px;
+}
+#output-hex {
+    width: 150px;
 }
 
 .label {
@@ -75,7 +84,6 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),  inset 0 -2px 10px rgba(0, 0, 0, 0.3);
 }
 
-
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -93,7 +101,7 @@
     cursor: pointer;
 }
 
-/*Firefox here*/
+/*Firefox here, DONT DELETE*/
 
 /*.slider::-moz-range-thumb {*/
 /*    -webkit-appearance: none;*/
