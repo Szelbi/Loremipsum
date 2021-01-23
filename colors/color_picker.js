@@ -1,4 +1,4 @@
-import {HSLToRGB} from './color_converters.js';
+import {HSLToRGB, HSLToHex} from './color_converters.js';
 
 
 /**
@@ -158,6 +158,11 @@ function setColors () {
      */
     let rgb = HSLToRGB(obj.hue, obj.saturation, obj.lightness, obj.alpha);
     document.getElementById("output-rgba").value = rgb;
+ /**
+     * Wartość tekstowa rgba do #output-hex
+     */
+    let hex = HSLToHex(obj.hue, obj.saturation, obj.lightness, obj.alpha);
+    document.getElementById("output-hex").value = hex;
 
 
     /**
