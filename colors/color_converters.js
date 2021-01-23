@@ -24,7 +24,6 @@ export function HSLToRGB(h,s,l,a) {
         g = 0,
         b = 0;
 
-
     if (0 <= h && h < 60) {
         r = c; g = x; b = 0;
     } else if (60 <= h && h < 120) {
