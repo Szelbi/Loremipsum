@@ -1,3 +1,6 @@
+import {HSLToRGB} from './color_converters.js';
+
+
 /**
  * Funkcja do sprawdzania czy wartość jest liczbą
  */
@@ -22,7 +25,7 @@ document.getElementById('hsl-a-result').addEventListener('input', function () {
  * @param object
  * @param event
  */
-allowNumbers = function (object, event) {
+function allowNumbers (object, event) {
 
 
     /**
@@ -53,7 +56,7 @@ allowNumbers = function (object, event) {
  * @param e
  * @param rangeId
  */
-setInputRange = function (obj, e, rangeId) {
+function setInputRange (obj, e, rangeId) {
 
     // łączę aktualną (starą) wartość z inputa z nową wartością którą wprowadza użytkownik z eventa
     let newValue = parseFloat(obj.value + e.key);
@@ -76,7 +79,7 @@ setInputRange = function (obj, e, rangeId) {
 /**
  * Pobieranie wartości HSLA na podstawie podanego id slidera
  */
-getSliderValue = function (sliderId) {
+function getSliderValue (sliderId) {
 
     let slider = document.getElementById(sliderId);
     let result = document.getElementById(sliderId + "-result");
@@ -90,7 +93,7 @@ getSliderValue = function (sliderId) {
 /**
  * Pobieranie wartości HSLA na podstawie podanego id resulta
  */
-getResultValue = function (sliderId) {
+function getResultValue (sliderId) {
 
     let slider = document.getElementById(sliderId);
     let result = document.getElementById(sliderId + "-result");
@@ -132,7 +135,7 @@ class hsla {
 /**
  * Ustawianie kolorów dla main-boxa i wszystkich sliderów
  */
-setColors = function () {
+function setColors () {
 
     let color = `hsla(${obj.hue}, ${obj.saturation}%, ${obj.lightness}%, ${obj.alpha})`;
 
@@ -149,6 +152,12 @@ setColors = function () {
      * Wartość tekstowa hsla do #output-hsla
      */
     document.getElementById("output-hsla").value = color;
+
+    /**
+     * Wartość tekstowa hsla do #output-rgba
+     */
+    let rgb = HSLToRGB(obj.hue, obj.saturation, obj.lightness, obj.alpha);
+    document.getElementById("output-rgba").value = rgb;
 
 
     /**
@@ -221,6 +230,7 @@ setColors = function () {
 }
 
 
+
 //TODO Wartości domyślne chyba mogłbyby być ładowane z konstruktora. Można to przerobić.
 let obj = new hsla(180, 100, 50, 1);
 obj.update(getSliderValue);
@@ -235,7 +245,7 @@ let sliders = document.getElementsByClassName("slider");
 for (let i = 0; i < sliders.length; i++) {
     sliders[i].addEventListener('input', () => {
         obj.update(getSliderValue);
-        setColors()
+        setColors();
     });
 }
 
@@ -260,7 +270,7 @@ for (let i = 0; i < results.length; i++) {
     // Dodaję funkcję colorMainBox przy wprowadzaniu wartości ręcznie do pola input
     results[i].addEventListener('input', () => {
         obj.update(getResultValue);
-        setColors()
+        setColors();
     });
 }
 
@@ -273,8 +283,13 @@ for (let i = 0; i < outputs.length; i++) {
     // Do wszystkich outputów dodaję funkcję z automatycznym zaznaczaniem tekstu po kliknięciu
     outputs[i].addEventListener('click', function () {
         this.select();
+
     })
 }
+
+
+
+
 
 
 /*
