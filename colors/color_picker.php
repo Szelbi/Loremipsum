@@ -60,4 +60,4 @@
 </footer>
 </html>
 
-<script src="/loremipsum/colors/color_picker.js"></script>
+<script type="module" src="/loremipsum/colors/color_picker.js"></script>
