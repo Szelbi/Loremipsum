@@ -47,7 +47,7 @@ export function HSLToRGB(h,s,l,a) {
 }
 
 
-function HSLToHex(h,s,l) {
+export function HSLToHex(h,s,l,a) {
     s /= 100;
     l /= 100;
 
@@ -75,6 +75,7 @@ function HSLToHex(h,s,l) {
     r = Math.round((r + m) * 255).toString(16);
     g = Math.round((g + m) * 255).toString(16);
     b = Math.round((b + m) * 255).toString(16);
+    a = Math.round(a * 255).toString(16);
 
     // Prepend 0s, if necessary
     if (r.length === 1)
@@ -83,6 +84,8 @@ function HSLToHex(h,s,l) {
         g = "0" + g;
     if (b.length === 1)
         b = "0" + b;
+    if (a.length === 1)
+        a = "0" + a;
 
-    return "#" + r + g + b;
+    return "#" + r + g + b + a;
 }
