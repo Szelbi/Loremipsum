@@ -30,8 +30,8 @@
                 <div class="nav-elem">
                     <button class="dropbtn collapsible">Colors</button>
                     <div class="dropdown-content">
-                        <a href="/loremipsum/colors/colors.php">Color scale</a>
-                        <a href="/loremipsum/colors/color_picker.php">Color picker</a>
+                        <a href="/loremipsum/colors/colors_scale.php">Color scale</a>
+                        <a href="/loremipsum/colors/colors_picker.php">Color picker</a>
                     </div>
                 </div>
             </li>
