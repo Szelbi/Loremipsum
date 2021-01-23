@@ -22,16 +22,15 @@ document.getElementById('hsl-a-result').addEventListener('input', function () {
 
 /**
  * Dozwolone tylko cyfry oraz kropka i przecinek w przypadku inputa dla Alphy
- * @param object
+ * @param obj
  * @param event
  */
-function allowNumbers (object, event) {
-
+function allowNumbers (obj, event) {
 
     /**
      * Dopuszczone maksymalnie 4 znaki
      */
-    object.value.length > 3 ? event.preventDefault() : true;
+    obj.value.length > 3 ? event.preventDefault() : true;
 
     /**
      * Jeżeli badanym elementem jest #hsl-a-result to:
@@ -41,8 +40,8 @@ function allowNumbers (object, event) {
      *
      * W pozostałych przypadkach (inputy inne niż alpha) pozwalam wprowadzić jedynie cyfry
      */
-    if (object.id === 'hsl-a-result') {
-        (!(/[0-9,.]/.test(event.key)) || (/[.,]/.test(event.key) && /[.]/.test(object.value))) ? event.preventDefault() : true;
+    if (obj.id === 'hsl-a-result') {
+        (!(/[0-9,.]/.test(event.key)) || (/[.,]/.test(event.key) && /[.]/.test(obj.value))) ? event.preventDefault() : true;
 
     } else {
         !(/[0-9]/.test(event.key)) ? event.preventDefault() : true;
@@ -213,8 +212,8 @@ function setColors () {
 
     /**
      * Modyfying -webkit-slider-thumb:hover in the #extra-css element.
-     * Need to change this in JS since I couldnt just use background:transperant in CSS because the thumb
-     * is bigger than the sliders
+     * Need to change this in JS since I couldnt just use background:transperant in CSS 
+     * because the thumb is bigger than the sliders
      */
     let style = document.querySelector('[id="extra-css"]');
     // style.innerHTML = `.slider::-webkit-slider-thumb:hover { background-color: hsla(180, 100%, 50%, 1) }`;
@@ -295,10 +294,8 @@ for (let i = 0; i < outputs.length; i++) {
 
 
 
-
-
 /*
 TODO
+- Dodać funckę pozwalającą na zmianę wartości w inputach result poprzez strzali w górę i w dół na klawiaturze
 - Przemyśleć wywoływanie funkcji w całym skrypcie. Być może niektóre funkcje powinny się zawierać w innych itp.
-- Zastanowić się nad konwersją HSLA na RGB(A). Ewentualnie możnaby skorzystać z gotowego rozwiązania (https://stackoverflow.com/questions/2353211/hsl-to-rgb-color-conversion)
  */
