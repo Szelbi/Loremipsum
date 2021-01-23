@@ -3,14 +3,15 @@
  * Funkcje nie są moje. Pochodzą ze strony https://css-tricks.com/converting-color-spaces-in-javascript/
  */
 
+
 /**
  * Konwersja HSLA na RGBA
  *
- * @param h
- * @param s
- * @param l
- * @param a
- * @returns {string}
+ * @param h     Hue
+ * @param s     Saturation
+ * @param l     Lightness
+ * @param a     Alpha
+ * @returns {string}, eg. "rgb(0, 255, 220, 0.67)"
  */
 export function HSLToRGB(h,s,l,a) {
     // Must be fractions of 1
@@ -42,5 +43,5 @@ export function HSLToRGB(h,s,l,a) {
     b = Math.round((b + m) * 255);
 
     // return "rgb(" + r + "," + g + "," + b + ")";
-    return `rgb(${r}, ${g}, ${b}, ${a})`;
+    return `rgba(${r}, ${g}, ${b}, ${a})`;
 }
