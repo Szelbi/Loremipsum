@@ -154,7 +154,7 @@ function setColors () {
     document.getElementById("output-hsla").value = color;
 
     /**
-     * Wartość tekstowa hsla do #output-rgba
+     * Wartość tekstowa rgba do #output-rgba
      */
     let rgb = HSLToRGB(obj.hue, obj.saturation, obj.lightness, obj.alpha);
     document.getElementById("output-rgba").value = rgb;
