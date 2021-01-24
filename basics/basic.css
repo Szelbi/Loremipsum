@@ -1,0 +1,43 @@
+div.ib {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    background: #Ccc;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 7px;
+    text-align: center;
+}
+
+.fotki {
+    max-height: 250px;
+    max-width: 250px;
+}
+
+.sidebar-center {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar {
+    background: rgba(50, 190, 150, 0.1);
+    display: inline-block;
+    position: fixed;
+    border: 1px solid black;
+    /*max-width: 300px;*/
+    font-size: 14px;
+}
+
+.color-row {
+    height: 10px;
+    width: 100%;
+    float: left;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: darkorange;
+    border-color: #545b62;
+}
