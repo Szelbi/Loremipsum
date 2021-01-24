@@ -19,13 +19,13 @@
 
 <main class="main">
     <div class="container">
-        <div class="row" style="background: #fff">
+        <div class="row border-orange">
             <div class="col-md-8">
                 <div class="row-content" id="Tekst">
                     <button class="hidd-button btn btn-secondary" onclick="hideDiv('tekst-content')">►
                     </button>
                     <h4 id="2">Tekst</h4>
-                    <div id="tekst-content" class="hidd drop-content">
+                    <div id="tekst-content" class="drop-content">
                         <p><img alt="Photo" src="../img/300x200.jpg" max-height="120" align="right" style="margin: 10px"/>Lorem
                             ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse <b>facilisis</b>, nisi et
                             accumsan placerat, ligula mi interdum felis, <s>vitae <b>cursus</b> est</s> purus id
@@ -45,7 +45,7 @@
                 <div class="row-content" id="Listy">
                     <button class="btn btn-secondary" onclick="hideDiv('listy-content')">►</button>
                     <h4 id="3">Listy</h4>
-                    <div id="listy-content" class="hidd drop-content">
+                    <div id="listy-content" class="drop-content">
                         <ul>
                             <li>Pozycja1</li>
                             <li>Pozycja2</li>
@@ -62,7 +62,7 @@
                 <div class="row-content" id="Obrazy">
                     <button class="btn btn-secondary" onclick="hideDiv('obrazy-content')">►</button>
                     <h4 id="5">Obrazy (ze stylu css)</h4>
-                    <div id="obrazy-content" class="hidd drop-content">
+                    <div id="obrazy-content" class="drop-content">
                         <img alt="" src="https://picsum.photos/1000/1000/?random" title="Obrazeczek" class="photos"/>
                         <img alt="" src="https://picsum.photos/250/600/?random" class="photos"/>
                         <img alt="" src="https://picsum.photos/600/300/?random" class="photos"/>
@@ -71,7 +71,7 @@
                 <div class="row-content" id="Tabele">
                     <button class="btn btn-secondary" onclick="hideDiv('tabele-content')">►</button>
                     <h4>Tabele</h4>
-                    <div id="tabele-content" class="hidd drop-content">
+                    <div id="tabele-content" class="drop-content">
                         <table align="center" class="table" style="width:70%">
                             <tr>
                                 <th></th>
@@ -103,7 +103,7 @@
                 <div class="row-content" id="Formularze">
                     <button class="btn btn-secondary" onclick="hideDiv('formularze-content')">►</button>
                     <h4 id="7">Formularze</h4>
-                    <div id="formularze-content" class="hidd drop-content">
+                    <div id="formularze-content" class="drop-content">
                         <div class="ib" id="login">
                             <form action="basic.php" method="GET">
                                 <p>Login: <input type="text" name="Login"></p>
@@ -175,7 +175,7 @@
                         ►
                     </button>
                     <h4>Dodatkowe elementy HTML</h4>
-                    <div id="elementy-content" class="hidd drop-content">
+                    <div id="elementy-content" class="drop-content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis impedit, dicta
                             commodi
                             sunt earum eos.
@@ -190,7 +190,7 @@
                         ►
                     </button>
                     <h4>Audio & video</h4>
-                    <div id="youtube-content" class="hidd drop-content">
+                    <div id="youtube-content" class="drop-content">
                         <iframe src="https://www.youtube.com/embed/L5uV3gmOH9g">
                         </iframe>
                     </div>
@@ -203,7 +203,7 @@
                     </button>
                     <h4>Kolorki</h4>
 
-                    <div id="kolor-content" class="hidd drop-content">
+                    <div id="kolor-content" class="drop-content">
 						<?php
 						for ($i = 1; $i < 10; $i++)
 							echo '<div class="color-row" style="background-color: hsl(' . rand(0, 360) . ',100%,' . rand(20, 80) . '%)"></div>';
@@ -220,7 +220,7 @@
                     </button>
                     <h4>Tekst</h4>
 
-                    <div id="tekst2-content" class="hidd drop-content">
+                    <div id="tekst2-content" class="drop-content">
                         <p>asdadad sad asdad asd a</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos necessitatibus placeat
                             porro rerum, tempore veniam voluptatibus. Accusamus atque explicabo quisquam!</p>
