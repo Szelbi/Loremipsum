@@ -6,58 +6,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/loremipsum/css/bootstrap.min.css">
     <link rel="stylesheet" href="/loremipsum/css/customStyle.css">
-    <script src="/loremipsum/js/jquery-3.5.1.min.js"></script>
-    <script src="/loremipsum/js/bootstrap.min.js"></script>
-    <script src="/loremipsum/js/customScripts.js"></script>
+<!--    <script src="/loremipsum/js/jquery-3.5.1.min.js"></script>-->
+<!--    <script src="/loremipsum/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="/loremipsum/basics/basic.css">
 
-
-    <style>
-
-        div.ib {
-            display: inline-block;
-            border: 1px solid black;
-            padding: 10px;
-            margin: 5px;
-            background: #Ccc;
-        }
-        table, th, td {
-            border: 1px solid black;
-            padding: 7px;
-            text-align: center;
-        }
-
-        .fotki {
-            max-height: 250px;
-            max-width: 250px;
-        }
-
-        .sidebar-center {
-            display: flex;
-            justify-content: center;
-        }
-
-        .sidebar {
-            background: rgba(50, 190, 150, 0.1);
-            display: inline-block;
-            position: fixed;
-            border: 1px solid black;
-            /*max-width: 300px;*/
-            font-size: 14px;
-        }
-
-        .color-row {
-            height: 10px;
-            width: 100%;
-            float: left;
-        }
-
-        .btn-secondary:hover {
-            color: #fff;
-            background-color: darkorange;
-            border-color: #545b62;
-        }
-
-    </style>
 </head>
 
 
@@ -70,7 +22,7 @@
 
 <main class="main">
     <div class="container">
-        <div class="row">
+        <div class="row" style="background: #fff">
             <div class="col-md-8">
                 <div>
                     <h1 id="1">Lorem Ipsum123</h1>
@@ -298,14 +250,14 @@
                         <li><a>Prezentacja CSS</a></li>
                         <li><a href="#Kolor">Kolor</a></li>
                         <li><a href="#Tekst2" title="Rozszerzenie pkt 2.">Tekst</a></li>
-                        <li><a href="boxes.php">Pudełka elementów</a></li>
+                        <li><a href="../boxes.php">Pudełka elementów</a></li>
                         <li><a href="#14">Listy, tabele i formularze</a></li>
                         <li><a href="#15">Układ</a></li>
                         <li><a href="#16">Obrazy</a></li>
                         <li><a href="#17">Układ w HTML5</a></li>
                         <li><a href="#18">Proces i projekt</a></li>
                         <li><a href="#top">Infromacje praktycze</a></li>
-                        <li><a href="to_test.html">TESTY</a></li>
+                        <li><a href="../to_test.html">TESTY</a></li>
                     </ol>
                 </div>
             </div>
@@ -320,3 +272,5 @@
 
 
 </html>
+
+<script src="basic.js"></script>
