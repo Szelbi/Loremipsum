@@ -18,11 +18,11 @@
 <body>
 
 <main class="main">
-    <div class="container">
-        <div class="row border-orange">
+    <div class="container " style="background: white">
+        <div class="row border-orange" >
             <div class="col-md-8">
                 <div class="row-content" id="Tekst">
-                    <button class="hidd-button btn btn-secondary" onclick="hideDiv('tekst-content')">►
+                    <button class="hidd-button btn" onclick="hideDiv('tekst-content', this)">►
                     </button>
                     <h4 id="2">Tekst</h4>
                     <div id="tekst-content" class="drop-content">
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="row-content" id="Listy">
-                    <button class="btn btn-secondary" onclick="hideDiv('listy-content')">►</button>
+                    <button class="btn" onclick="hideDiv('listy-content', this)">►</button>
                     <h4 id="3">Listy</h4>
                     <div id="listy-content" class="drop-content">
                         <ul>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="row-content" id="Obrazy">
-                    <button class="btn btn-secondary" onclick="hideDiv('obrazy-content')">►</button>
+                    <button class="btn" onclick="hideDiv('obrazy-content', this)">►</button>
                     <h4 id="5">Obrazy (ze stylu css)</h4>
                     <div id="obrazy-content" class="drop-content">
                         <img alt="" src="https://picsum.photos/1000/1000/?random" title="Obrazeczek" class="photos"/>
@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <div class="row-content" id="Tabele">
-                    <button class="btn btn-secondary" onclick="hideDiv('tabele-content')">►</button>
+                    <button class="btn" onclick="hideDiv('tabele-content', this)">►</button>
                     <h4>Tabele</h4>
                     <div id="tabele-content" class="drop-content">
                         <table align="center" class="table" style="width:70%">
@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <div class="row-content" id="Formularze">
-                    <button class="btn btn-secondary" onclick="hideDiv('formularze-content')">►</button>
+                    <button class="btn" onclick="hideDiv('formularze-content', this)">►</button>
                     <h4 id="7">Formularze</h4>
                     <div id="formularze-content" class="drop-content">
                         <div class="ib" id="login">
@@ -171,7 +171,7 @@
                     </div>
                 </div>
                 <div class="row-content" id="Dodatkowe">
-                    <button class="btn btn-secondary" onclick="hideDiv('elementy-content')">
+                    <button class="btn" onclick="hideDiv('elementy-content', this)">
                         ►
                     </button>
                     <h4>Dodatkowe elementy HTML</h4>
@@ -186,7 +186,7 @@
                 </div>
 
                 <div class="row-content" id="Youtube">
-                    <button class="btn btn-secondary" onclick="hideDiv('youtube-content')">
+                    <button class="btn" onclick="hideDiv('youtube-content', this)">
                         ►
                     </button>
                     <h4>Audio & video</h4>
@@ -198,7 +198,7 @@
 
 
                 <div class="row-content" id="Kolor">
-                    <button class="btn" onclick="hideDiv('kolor-content')">
+                    <button class="btn" onclick="hideDiv('kolor-content', this)">
                         ►
                     </button>
                     <h4>Kolorki</h4>
@@ -215,7 +215,7 @@
 
 
                 <div class="row-content" id="Tekst2">
-                    <button class="btn btn-secondary" onclick="hideDiv('tekst2-content')">
+                    <button class="btn" onclick="hideDiv('tekst2-content', this)">
                         ►
                     </button>
                     <h4>Tekst</h4>
