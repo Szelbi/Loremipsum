@@ -5,13 +5,19 @@ div.ib {
     margin: 5px;
     background: #Ccc;
 }
+
 table, th, td {
     border: 1px solid black;
     padding: 7px;
     text-align: center;
 }
 
-.fotki {
+h1, h2, h3, h4 {
+    display: inline;
+    padding: 0 10px;
+}
+
+.photos {
     max-height: 250px;
     max-width: 250px;
 }
@@ -22,22 +28,58 @@ table, th, td {
 }
 
 .sidebar {
-    background: rgba(50, 190, 150, 0.1);
+    /*background: rgba(50, 190, 150, 0.1);*/
     display: inline-block;
     position: fixed;
-    border: 1px solid black;
-    /*max-width: 300px;*/
+    /*border: 1px solid black;*/
     font-size: 14px;
+    text-decoration: none;
+
+}
+
+.sidebar a {
+    color: #666;
 }
 
 .color-row {
     height: 10px;
     width: 100%;
-    float: left;
 }
 
 .btn-secondary:hover {
-    color: #fff;
     background-color: darkorange;
-    border-color: #545b62;
+}
+
+.row-content {
+    padding: 10px;
+    border-bottom: green 1px solid;
+}
+
+
+.hidd {
+    border: purple 1px solid;
+}
+
+.drop-content {
+    padding: 10px;
+}
+
+
+iframe {
+    /*max-width: 100% !important;*/
+    /*width: auto !important;*/
+    /*height: auto !important;*/
+    position: relative;
+    min-height: 300px;
+    height: 100%;
+    width: 100%;
+}
+
+
+.btn:focus{
+    box-shadow:none;
+}
+
+.btn:hover{
+    box-shadow: 0 0 10px 10px #5552;
 }
