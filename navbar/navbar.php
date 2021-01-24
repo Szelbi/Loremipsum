@@ -24,7 +24,7 @@
                 <a class="nav-elem" href="/loremipsum/a4pages/wydruk.php">A4 Pages</a>
             </li>
             <li>
-                <a class="nav-elem" href="/loremipsum/basics/boxes.php">Boxes</a>
+                <a class="nav-elem" href="/loremipsum/boxes.php">Boxes</a>
             </li>
             <li>
                 <div class="nav-elem">
