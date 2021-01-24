@@ -64,8 +64,7 @@ h1, h2, h3, h4, h5 {
 .center{
 	text-align: center;
 	/*margin: auto;*/
-	padding: 5px 0;
-	background-color: #fff;
+	padding: 5px;
 }
 .right{
 	float:right;
