@@ -7,5 +7,4 @@ function hideDiv(elem, obj) {
         x.style.display = "block";
         obj.innerHTML = "▼"
     }
-    console.log(obj);
 }
