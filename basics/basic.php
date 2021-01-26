@@ -18,13 +18,15 @@
 <body>
 
 <main class="main">
-    <div class="container " style="background: white">
+    <div class="container" style="background: white">
         <div class="row border-orange">
             <div class="col-md-8">
                 <div class="row-content" id="Tekst">
-                    <button class="hidd-button btn" onclick="hideDiv('tekst-content', this)">►
-                    </button>
-                    <h4>Tekst</h4>
+                    <div class="header">
+                        <button class="hidd-button btn header-btn" onclick="hideDiv('tekst-content', this)">►
+                        </button>
+                        <h4>Tekst</h4>
+                    </div>
                     <div id="tekst-content" class="drop-content">
                         <p><img alt="Photo" src="../img/300x200.jpg" max-height="120" align="right"
                                 style="margin: 10px"/>Lorem
@@ -44,8 +46,10 @@
                     </div>
                 </div>
                 <div class="row-content" id="Listy">
-                    <button class="btn" onclick="hideDiv('listy-content', this)">►</button>
-                    <h4>Listy</h4>
+                    <div class="header">
+                        <button class="btn header-btn" onclick="hideDiv('listy-content', this)">►</button>
+                        <h4>Listy</h4>
+                    </div>
                     <div id="listy-content" class="drop-content">
                         <ul>
                             <li>Pozycja1</li>
@@ -61,8 +65,10 @@
                     </div>
                 </div>
                 <div class="row-content" id="Obrazy">
-                    <button class="btn" onclick="hideDiv('obrazy-content', this)">►</button>
-                    <h4>Obrazy (ze stylu css)</h4>
+                    <div class="header">
+                        <button class="btn header-btn" onclick="hideDiv('obrazy-content', this)">►</button>
+                        <h4>Obrazy</h4>
+                    </div>
                     <div id="obrazy-content" class="drop-content">
                         <img alt="" src="https://picsum.photos/1000/1000/?random" title="Obrazeczek" class="photos"/>
                         <img alt="" src="https://picsum.photos/250/600/?random" class="photos"/>
@@ -70,7 +76,7 @@
                     </div>
                 </div>
                 <div class="row-content" id="Tabele">
-                    <button class="btn" onclick="hideDiv('tabele-content', this)">►</button>
+                    <button class="btn header-btn" onclick="hideDiv('tabele-content', this)">►</button>
                     <h4>Tabele</h4>
                     <div id="tabele-content" class="drop-content">
                         <table align="center" class="table" style="width:70%">
@@ -102,8 +108,10 @@
                     </div>
                 </div>
                 <div class="row-content" id="Formularze">
-                    <button class="btn" onclick="hideDiv('formularze-content', this)">►</button>
-                    <h4>Formularze</h4>
+                    <div class="header">
+                        <button class="btn header-btn" onclick="hideDiv('formularze-content', this)">►</button>
+                        <h4>Formularze</h4>
+                    </div>
                     <div id="formularze-content" class="drop-content">
                         <div class="ib" id="login">
                             <form action="basic.php" method="GET">
@@ -172,10 +180,12 @@
                     </div>
                 </div>
                 <div class="row-content" id="Dodatkowe">
-                    <button class="btn" onclick="hideDiv('elementy-content', this)">
-                        ►
-                    </button>
-                    <h4>Dodatkowe elementy HTML</h4>
+                    <div class="header">
+                        <button class="btn header-btn" onclick="hideDiv('elementy-content', this)">
+                            ►
+                        </button>
+                        <h4>Dodatkowe elementy HTML</h4>
+                    </div>
                     <div id="elementy-content" class="drop-content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis impedit, dicta
                             commodi
@@ -185,24 +195,25 @@
                                 width="100%" height="400px"></iframe>
                     </div>
                 </div>
-
                 <div class="row-content" id="Youtube">
-                    <button class="btn" onclick="hideDiv('youtube-content', this)">
-                        ►
-                    </button>
-                    <h4>Audio & video</h4>
+                    <div class="header">
+                        <button class="btn header-btn" onclick="hideDiv('youtube-content', this)">
+                            ►
+                        </button>
+                        <h4>Audio & video</h4>
+                    </div>
                     <div id="youtube-content" class="drop-content">
                         <iframe src="https://www.youtube.com/embed/L5uV3gmOH9g">
                         </iframe>
                     </div>
                 </div>
-
-
                 <div class="row-content" id="Kolor">
-                    <button class="btn" onclick="hideDiv('kolor-content', this)">
-                        ►
-                    </button>
-                    <h4>Kolorki</h4>
+                    <div class="header">
+                        <button class="btn header-btn" onclick="hideDiv('kolor-content', this)">
+                            ►
+                        </button>
+                        <h4>Kolorki</h4>
+                    </div>
 
                     <div id="kolor-content" class="drop-content">
 						<?php
@@ -214,17 +225,17 @@
 
 
                 <div class="row-content" id="Tekst2">
-                    <button class="btn" onclick="hideDiv('tekst2-content', this)">
-                        ►
-                    </button>
-                    <h4>Tekst</h4>
-
+                    <div class="header">
+                        <button class="btn header-btn" onclick="hideDiv('tekst2-content', this)">►</button>
+                        <h4>Tekst</h4>
+                    </div>
                     <div id="tekst2-content" class="drop-content">
                         <p>asdadad sad asdad asd a</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos necessitatibus placeat
                             porro rerum, tempore veniam voluptatibus. Accusamus atque explicabo quisquam!</p>
                     </div>
                 </div>
+
             </div>
             <div class="sidebar-center col-md-4">
                 <div class="sidebar">
