@@ -19,14 +19,15 @@
 
 <main class="main">
     <div class="container " style="background: white">
-        <div class="row border-orange" >
+        <div class="row border-orange">
             <div class="col-md-8">
                 <div class="row-content" id="Tekst">
                     <button class="hidd-button btn" onclick="hideDiv('tekst-content', this)">►
                     </button>
-                    <h4 id="2">Tekst</h4>
+                    <h4>Tekst</h4>
                     <div id="tekst-content" class="drop-content">
-                        <p><img alt="Photo" src="../img/300x200.jpg" max-height="120" align="right" style="margin: 10px"/>Lorem
+                        <p><img alt="Photo" src="../img/300x200.jpg" max-height="120" align="right"
+                                style="margin: 10px"/>Lorem
                             ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse <b>facilisis</b>, nisi et
                             accumsan placerat, ligula mi interdum felis, <s>vitae <b>cursus</b> est</s> purus id
                             purus. <em>Praesent feugiat</em>, nulla eget maximus ultricies, justo odio finibus
@@ -44,7 +45,7 @@
                 </div>
                 <div class="row-content" id="Listy">
                     <button class="btn" onclick="hideDiv('listy-content', this)">►</button>
-                    <h4 id="3">Listy</h4>
+                    <h4>Listy</h4>
                     <div id="listy-content" class="drop-content">
                         <ul>
                             <li>Pozycja1</li>
@@ -61,7 +62,7 @@
                 </div>
                 <div class="row-content" id="Obrazy">
                     <button class="btn" onclick="hideDiv('obrazy-content', this)">►</button>
-                    <h4 id="5">Obrazy (ze stylu css)</h4>
+                    <h4>Obrazy (ze stylu css)</h4>
                     <div id="obrazy-content" class="drop-content">
                         <img alt="" src="https://picsum.photos/1000/1000/?random" title="Obrazeczek" class="photos"/>
                         <img alt="" src="https://picsum.photos/250/600/?random" class="photos"/>
@@ -102,7 +103,7 @@
                 </div>
                 <div class="row-content" id="Formularze">
                     <button class="btn" onclick="hideDiv('formularze-content', this)">►</button>
-                    <h4 id="7">Formularze</h4>
+                    <h4>Formularze</h4>
                     <div id="formularze-content" class="drop-content">
                         <div class="ib" id="login">
                             <form action="basic.php" method="GET">
@@ -207,11 +208,9 @@
 						<?php
 						for ($i = 1; $i < 10; $i++)
 							echo '<div class="color-row" style="background-color: hsl(' . rand(0, 360) . ',100%,' . rand(20, 80) . '%)"></div>';
-//						?>
+						//						?>
                     </div>
                 </div>
-
-
 
 
                 <div class="row-content" id="Tekst2">
