@@ -27,6 +27,9 @@
                 <a class="nav-elem" href="/loremipsum/boxes.php">Boxes</a>
             </li>
             <li>
+                <a class="nav-elem" href="/loremipsum/gallery.php">Gallery</a>
+            </li>
+            <li>
                 <div class="nav-elem">
                     <button class="dropbtn collapsible">Colors</button>
                     <div class="dropdown-content">
