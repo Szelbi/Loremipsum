@@ -32,13 +32,13 @@
 <body>
 <main class="main">
 
-    <h1>Custom Range Slider</h1>
+    <h1>CSS Grid gallery</h1>
 
     <div class="gallery border-orange">
 
         <?php
 
-        for($i=0; $i < 40; $i++) {
+        for($i=0; $i < 64; $i++) {
             echo '<img src = "https://picsum.photos/400/300?random='.$i .'" >';
         }
         ?>
